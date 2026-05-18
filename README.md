@@ -1,156 +1,135 @@
 <div align="center">
 
-# 👋 Hi, I'm Híu
+# Hi, I'm Hiếu 👋
 
-### 🚀 Frontend Engineer • TypeScript Enthusiast • Performance Lover
-
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=24&pause=1000&color=58A6FF&center=true&vCenter=true&random=false&width=700&lines=React+%2B+TypeScript+Developer;Performance+Optimization+Enjoyer;AI-assisted+Development;Clean+Architecture+Advocate;Always+Learning+New+Things" />
+### Senior Frontend Engineer — React • Enterprise Systems • Performance
 
 <br/>
 
-<img src="https://komarev.com/ghpvc/?username=YOUR_GITHUB_USERNAME&style=for-the-badge&color=blue" />
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&pause=1000&color=58A6FF&center=true&vCenter=true&width=700&lines=Enterprise+React+Development;Reusable+Component+Systems;Performance+Optimization;AI-assisted+Development+Workflow" />
+
+<br/>
+
+<img src="https://komarev.com/ghpvc/?username=YOUR_GITHUB_USERNAME&style=flat-square&color=blue" />
 
 </div>
 
 ---
 
-# 🧠 About Me
+## 🧠 About Me
 
-```ts
-const hiu = {
-  role: "Frontend Engineer",
-  languages: ["TypeScript", "JavaScript", "Go"],
-  frontend: ["React", "Next.js", "TailwindCSS"],
-  backend: ["Go", "Node.js"],
-  interests: [
-    "System Design",
-    "Performance Optimization",
-    "Testing Strategy",
-    "AI Agents",
-    "Developer Experience"
-  ],
-  currentFocus: "Building scalable & maintainable applications",
-};
-```
+I’m a frontend engineer with ~7 years of experience working on enterprise systems.
+
+My strength is not just building UI — but working inside **large-scale codebases**, understanding business flows, and delivering stable, maintainable features under real constraints.
+
+* Strong experience with **React ecosystem**
+* Worked across **multiple enterprise projects (React, Angular, Java, C#)**
+* Currently focusing on **reusable systems & frontend optimization**
+* Experienced in **working with QA, clients, and cross-team collaboration**
 
 ---
 
-# ⚡ Tech Stack
+## ⚡ What I Actually Do
 
-<div align="center">
+### 🧩 Enterprise Feature Development
 
-## Frontend
-<img src="https://skillicons.dev/icons?i=react,nextjs,ts,js,tailwind,vite,redux" />
+* Implement complex business features from detailed requirements
+* Work effectively within large, existing architectures
+* Quickly understand and adapt to unfamiliar codebases
 
-## Backend
-<img src="https://skillicons.dev/icons?i=go,nodejs,express" />
+### ♻️ Reusable Component & System Design
 
-## Database
-<img src="https://skillicons.dev/icons?i=mysql,postgres,mongodb,redis" />
+* Built common systems: fields, tables, dialogs, form structures
+* Designed dynamic field configuration for flexible UI
+* Improved consistency and reusability across screens
 
-## DevOps & Tools
-<img src="https://skillicons.dev/icons?i=docker,git,github,linux,vscode,postman" />
+### ⚡ Performance Optimization
 
-## Testing
-<img src="https://skillicons.dev/icons?i=jest" />
+* Reduced unnecessary re-renders using `useMemo`, `useCallback`
+* Applied lazy loading to improve initial load performance
+* Optimized API loading strategy (avoid heavy initial requests)
 
-</div>
+### 🧪 Testing & Stability
 
----
+* Experience with unit testing and E2E testing
+* Worked with Cypress and Playwright
+* Built internal workflows for testing and evidence collection
 
-# 📊 GitHub Stats
+### 🤖 AI-assisted Development
 
-<div align="center">
-
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=YOUR_GITHUB_USERNAME&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" />
-
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_GITHUB_USERNAME&layout=compact&theme=tokyonight&hide_border=true" />
-
-</div>
-
----
-
-# 🔥 GitHub Streak
-
-<div align="center">
-
-<img src="https://streak-stats.demolab.com?user=YOUR_GITHUB_USERNAME&theme=tokyonight&hide_border=true" />
-
-</div>
+* Applied AI tools (Copilot, Codex) to improve development speed
+* Built internal workflows for test automation support
+* Helped team adopt AI-assisted development practices
 
 ---
 
-# 📈 Contribution Graph
+## 🧩 Selected Experience
 
-<div align="center">
+### 🔹 Current Enterprise React Platform
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=YOUR_GITHUB_USERNAME&theme=tokyo-night&hide_border=true" />
-
-</div>
-
----
-
-# 🏆 Achievements
-
-<div align="center">
-
-<img src="https://github-profile-trophy.vercel.app/?username=YOUR_GITHUB_USERNAME&theme=tokyonight&no-frame=true&row=1&column=7" />
-
-</div>
+* Work with React, TypeScript, React Query, Recoil
+* Build reusable systems (table, field, workflow UI)
+* Contribute to structure optimization & maintainability
+* Participate in code review and onboarding
+* Develop and maintain testing flows (Playwright)
 
 ---
 
-# 🚀 Featured Projects
+### 🔹 React Dashboard System (Built from scratch)
 
-## 🔹 Project Name
-> Short description about your awesome project.
-
-### Tech Stack
-- React
-- TypeScript
-- TailwindCSS
-- Go
-
-### Highlights
-- ⚡ Optimized rendering performance
-- 🧪 Integration & E2E Testing
-- 🏗 Clean Architecture
-- 🤖 AI-assisted workflow
+* Setup project using Vite + TailwindCSS
+* Designed Redux Toolkit structure (slice, async flow)
+* Built reusable UI systems (form, table, common components)
+* Applied lazy loading & render optimization
+* Owned most of the frontend implementation
 
 ---
 
-## 🔹 Another Project
-> Short description about your second project.
+### 🔹 React Migration Project
 
-### Highlights
-- 🔥 High performance UI
-- 📦 Reusable component system
-- 🎯 Type-safe APIs
-- 🚀 DX focused
+* Migrated React 15 → React 16
+* Worked with legacy lifecycle and compatibility issues
+* Improved understanding of React rendering behavior
 
 ---
 
-# 📚 Currently Learning
+## ⚙️ Tech Stack
 
-- Advanced System Design
-- AI Agent Workflow
-- Scalable Frontend Architecture
-- Go Backend Development
-- Testing Strategy & Automation
+**Frontend**
 
----
+* React, TypeScript, JavaScript
+* Redux Toolkit, React Query, Recoil
+* TailwindCSS, Ant Design, Material UI
 
-# 🎮 Fun Facts
+**Testing**
 
-- 🎯 Obsessed with performance optimization
-- 🎮 Naraka: Bladepoint player
-- 🖥 Loves ultrawide setup
-- ⚡ Clean code enjoyer
-- 🤖 Interested in AI-powered development workflow
+* Cypress, Playwright, Vitest
+
+**Other**
+
+* Node.js (basic), Go (basic)
 
 ---
 
-# 🌐 Connect With Me
+## 📈 Engineering Focus
+
+* Writing maintainable and scalable frontend code
+* Improving performance in real-world applications
+* Building reusable and consistent UI systems
+* Understanding how frontend systems behave at scale
+
+---
+
+## 🎯 Current Improvement
+
+* Strengthening **JavaScript fundamentals & browser behavior**
+* Learning **algorithms & data structures**
+* Improving **system design thinking (frontend focus)**
+* Practicing **technical communication & interview skills**
+
+---
+
+## 🌐 Connect
 
 <div align="center">
 
@@ -172,16 +151,6 @@ const hiu = {
 
 <div align="center">
 
-## 💭 Dev Quote
-
-<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" />
-
-</div>
-
----
-
-<div align="center">
-
-### ⚡ "First, solve the problem. Then, write the clean code."
+### “I focus on building reliable systems — not just shipping features.”
 
 </div>
