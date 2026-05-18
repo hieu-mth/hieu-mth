@@ -67,7 +67,7 @@ With ~7 years of experience, I focus on writing reliable, maintainable code that
 
 ### 🔹 Current Enterprise React Platform
 
-* Work with React, TypeScript, React Query, Recoil
+* Work with React, TypeScript, TanStack Query (React Query), Recoil
 * Build reusable systems (table, field, workflow UI)
 * Contribute to structure optimization & maintainability
 * Participate in code review and onboarding
@@ -98,7 +98,7 @@ With ~7 years of experience, I focus on writing reliable, maintainable code that
 **Frontend**
 
 * React, TypeScript, JavaScript
-* Redux Toolkit, React Query, Recoil
+* Redux Toolkit, TanStack Query (React Query), Recoil
 * TailwindCSS, Ant Design, Material UI
 
 **Testing**
