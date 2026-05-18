@@ -2,7 +2,7 @@
 
 # Hi, I'm Hiếu 👋
 
-### Senior Frontend Engineer — React • Enterprise Systems • Performance
+### Senior Frontend Engineer — React • Enterprise Systems • Performance & Reusability
 
 <br/>
 
@@ -18,14 +18,14 @@
 
 ## 🧠 About Me
 
-I’m a frontend engineer with ~7 years of experience working on enterprise systems.
+I specialize in building and maintaining large-scale frontend systems in enterprise environments.
 
-My strength is not just building UI — but working inside **large-scale codebases**, understanding business flows, and delivering stable, maintainable features under real constraints.
+With ~7 years of experience, I focus on writing reliable, maintainable code that works under real-world constraints — not just ideal scenarios.
 
 * Strong experience with **React ecosystem**
 * Worked across **multiple enterprise projects (React, Angular, Java, C#)**
-* Currently focusing on **reusable systems & frontend optimization**
-* Experienced in **working with QA, clients, and cross-team collaboration**
+* Focused on **reusable systems, performance optimization, and maintainability**
+* Comfortable working with **QA, clients, and cross-team collaboration**
 
 ---
 
@@ -39,15 +39,15 @@ My strength is not just building UI — but working inside **large-scale codebas
 
 ### ♻️ Reusable Component & System Design
 
-* Built common systems: fields, tables, dialogs, form structures
+* Built reusable systems (fields, tables, dialogs, forms) to reduce duplication and improve development consistency
 * Designed dynamic field configuration for flexible UI
-* Improved consistency and reusability across screens
+* Improved consistency and reduced duplicated UI logic across multiple screens
 
 ### ⚡ Performance Optimization
 
-* Reduced unnecessary re-renders using `useMemo`, `useCallback`
+* Reduced unnecessary re-renders by stabilizing component boundaries and optimizing state updates
 * Applied lazy loading to improve initial load performance
-* Optimized API loading strategy (avoid heavy initial requests)
+* Optimized API loading strategy to avoid heavy initial requests
 
 ### 🧪 Testing & Stability
 
@@ -81,7 +81,7 @@ My strength is not just building UI — but working inside **large-scale codebas
 * Designed Redux Toolkit structure (slice, async flow)
 * Built reusable UI systems (form, table, common components)
 * Applied lazy loading & render optimization
-* Owned most of the frontend implementation
+* Took ownership of most frontend implementation and key structure decisions
 
 ---
 
@@ -113,9 +113,9 @@ My strength is not just building UI — but working inside **large-scale codebas
 
 ## 📈 Engineering Focus
 
-* Writing maintainable and scalable frontend code
+* Building maintainable and scalable frontend systems
 * Improving performance in real-world applications
-* Building reusable and consistent UI systems
+* Designing reusable and consistent UI systems
 * Understanding how frontend systems behave at scale
 
 ---
