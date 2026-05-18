@@ -57,7 +57,7 @@ My strength is not just building UI — but working inside **large-scale codebas
 
 ### 🤖 AI-assisted Development
 
-* Applied AI tools (Copilot, Codex) to improve development speed
+* Applied AI tools (Copilot, Codex, Claude Code) to improve development speed
 * Built internal workflows for test automation support
 * Helped team adopt AI-assisted development practices
 
@@ -107,7 +107,7 @@ My strength is not just building UI — but working inside **large-scale codebas
 
 **Other**
 
-* Node.js (basic), Go (basic)
+* Node.js (basic), Next.js (basic), Go (basic)
 
 ---
 
@@ -133,15 +133,15 @@ My strength is not just building UI — but working inside **large-scale codebas
 
 <div align="center">
 
-<a href="https://github.com/YOUR_GITHUB_USERNAME">
+<a href="https://github.com/hieu-mth">
   <img src="https://skillicons.dev/icons?i=github" />
 </a>
 
-<a href="https://linkedin.com/in/YOUR_LINKEDIN">
+<a href="https://linkedin.com/in/hieu-mth">
   <img src="https://skillicons.dev/icons?i=linkedin" />
 </a>
 
-<a href="mailto:YOUR_EMAIL@gmail.com">
+<a href="mailto:mthh.shun.1804@gmail.com">
   <img src="https://skillicons.dev/icons?i=gmail" />
 </a>
 
