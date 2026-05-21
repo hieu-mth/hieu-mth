@@ -1,15 +1,20 @@
-import { basicProfile } from '@/content/profile/basic';
-import { strengths } from '@/content/profile/strengths';
-import { thinking } from '@/content/profile/thinking';
-import { experiences } from '@/content/profile/experience';
-import { goals } from '@/content/profile/goals';
+import {
+  basicProfile,
+  experiences,
+  goals,
+  pageContent,
+  strengths,
+  thinking,
+} from '@/content/profile';
+import type { ProfileData } from '@/features/profile/types';
 
-export function getProfileData() {
+export function getProfileData(): ProfileData {
   return {
     basicProfile,
     strengths,
     thinking,
     experiences,
-    goals
+    goals,
+    pageContent,
   };
 }
