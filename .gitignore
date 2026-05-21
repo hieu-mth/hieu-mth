@@ -1,4 +1,7 @@
+# next.js
 .next/
+
+# node
 node_modules/
 
 # local env files
@@ -24,3 +27,6 @@ coverage/
 # OS/editor files
 .DS_Store
 Thumbs.db
+
+# TypeScript
+tsconfig.tsbuildinfo
