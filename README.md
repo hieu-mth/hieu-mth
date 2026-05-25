@@ -25,9 +25,17 @@ A production-style Next.js frontend for presenting a senior frontend engineer pr
 ## Scripts
 
 - `npm run dev`: start the development server
+- `npm run lint`: run ESLint checks
 - `npm run type-check`: run TypeScript without emitting files
 - `npm run build`: create the production build
 - `npm run format`: format the codebase with Prettier
+
+## Deployment
+
+- Static export output is generated in `out/`.
+- GitHub Pages deployment is handled by `.github/workflows/deploy-pages.yml`.
+- In repository settings, set Pages source to `GitHub Actions`.
+- Keep `basePath` and `assetPrefix` in `next.config.js` aligned with the repository name.
 
 ## Notes
 
