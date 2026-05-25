@@ -67,7 +67,7 @@ export function ThemeToggle() {
       variant="ghost"
       size="sm"
       onClick={toggleTheme}
-      className="rounded-[1.15rem] border border-border/80 bg-muted/35 px-3 py-2 text-left text-xs font-medium text-foreground/80 hover:bg-muted/55 sm:min-w-[5.5rem]"
+      className="rounded-xl border border-border/70 bg-muted/30 px-3 py-2 text-left text-xs font-medium text-foreground/80 hover:bg-muted/50 sm:min-w-[5.25rem]"
       aria-label={
         mounted
           ? `Switch to ${theme === 'dark' ? 'light' : 'dark'} theme`
@@ -81,7 +81,7 @@ export function ThemeToggle() {
         </span>
         <span className="mt-1 flex items-center gap-2 text-[13px] font-semibold text-foreground">
           <span className="inline-flex h-2 w-2 rounded-full bg-accent" />
-          {mounted ? theme : 'Theme'}
+          {mounted ? (theme === 'dark' ? 'Dark' : 'Light') : 'Theme'}
         </span>
       </span>
     </Button>

@@ -2,6 +2,7 @@ export {
   ExperienceSection,
   GoalsSection,
   HeroSection,
+  ProfileNavbar,
   StrengthsSection,
   ThinkingSection,
 } from '@/features/profile/components';
