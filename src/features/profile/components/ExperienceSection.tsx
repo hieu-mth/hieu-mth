@@ -17,7 +17,7 @@ export function ExperienceSection() {
   return (
     <section
       id={pageContent.experience.id}
-      className="border-t border-neutral-900/80 py-24"
+      className="scroll-mt-32 border-t border-border/80 py-24 sm:py-28"
     >
       <Reveal className="max-w-2xl">
         <div className="space-y-4">
@@ -25,49 +25,55 @@ export function ExperienceSection() {
             {pageContent.experience.eyebrow}
           </Badge>
           <div className="space-y-3">
-            <h2 className="text-2xl font-semibold text-neutral-100">
+            <h2 className="text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
               {pageContent.experience.title}
             </h2>
-            <p className="text-base leading-relaxed text-neutral-400">
+            <p className="text-base leading-8 text-muted-foreground sm:text-lg">
               {pageContent.experience.description}
             </p>
           </div>
         </div>
       </Reveal>
-      <div className="mt-10 grid gap-6 lg:grid-cols-[1.25rem_minmax(0,1fr)]">
+      <div className="mt-12 grid gap-6 lg:grid-cols-[1.5rem_minmax(0,1fr)]">
         <div className="relative hidden lg:block">
-          <div className="absolute left-1/2 top-4 h-[calc(100%-2rem)] w-px -translate-x-1/2 bg-neutral-800" />
+          <div className="absolute left-1/2 top-4 h-[calc(100%-2rem)] w-px -translate-x-1/2 bg-border" />
         </div>
-        <StaggerList className="space-y-5">
+        <StaggerList className="space-y-6">
           {experiences.map((experience, index) => (
             <StaggerListItem key={experience.title} className="list-none">
-              <div className="grid gap-4 lg:grid-cols-[2.5rem_minmax(0,1fr)] lg:items-start">
-                <div className="hidden h-10 w-10 items-center justify-center rounded-full border border-neutral-800 bg-neutral-950 text-sm font-semibold text-neutral-400 lg:flex">
+              <div className="grid gap-4 lg:grid-cols-[2.75rem_minmax(0,1fr)] lg:items-start">
+                <div className="hidden h-11 w-11 items-center justify-center rounded-full border border-border bg-background text-sm font-semibold text-muted-foreground shadow-[0_8px_24px_-18px_hsl(var(--foreground)_/_0.22)] lg:flex">
                   {String(index + 1).padStart(2, '0')}
                 </div>
-                <Card className="overflow-hidden border-neutral-800/80 bg-neutral-950/60 hover:border-neutral-700">
-                  <CardHeader className="border-b border-neutral-800/80 pb-5">
+                <Card className="overflow-hidden hover:-translate-y-1 hover:border-accent/30 hover:shadow-[0_28px_70px_-42px_hsl(var(--accent)_/_0.18)]">
+                  <CardHeader className="gap-5 border-b border-border/80 pb-5">
                     <div className="flex flex-wrap items-center gap-3">
-                      <Badge variant="outline" className="text-neutral-300">
+                      <Badge variant="outline" className="text-foreground/72">
                         {experience.role}
                       </Badge>
-                      <span className="text-sm text-neutral-500">
+                      <span className="text-sm uppercase tracking-[0.2em] text-muted-foreground">
                         {pageContent.experience.metaLabel}
                       </span>
                     </div>
-                    <CardTitle className="text-2xl">
+                    <CardTitle className="text-2xl sm:text-[1.75rem]">
                       {experience.title}
                     </CardTitle>
-                    <CardDescription>
+                    <CardDescription className="max-w-2xl text-base leading-7">
                       {pageContent.experience.cardDescription}
                     </CardDescription>
                   </CardHeader>
-                  <CardContent className="p-6">
+                  <CardContent className="space-y-5 sm:space-y-6">
+                    <div className="flex flex-col gap-2 rounded-2xl border border-border/80 bg-background/60 px-4 py-3 text-sm text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
+                      <span className="font-medium text-foreground/80">
+                        Workstream {String(index + 1).padStart(2, '0')}
+                      </span>
+                      <span>{experience.highlights.length} focus areas</span>
+                    </div>
                     <ul className="grid gap-3 md:grid-cols-3">
                       {experience.highlights.map((highlight) => (
                         <li
                           key={highlight}
-                          className="rounded-2xl border border-neutral-800 bg-neutral-900/40 px-4 py-4 text-sm leading-relaxed text-neutral-300 transition-all duration-200 hover:border-neutral-700 hover:bg-neutral-900/60"
+                          className="rounded-2xl border border-border bg-background/72 px-4 py-4 text-sm leading-7 text-muted-foreground transition-colors duration-200 hover:border-accent/20 hover:bg-accent/5 hover:text-foreground/88"
                         >
                           {highlight}
                         </li>

@@ -5,21 +5,23 @@ import { cva, type VariantProps } from 'class-variance-authority';
 import { cn } from '@/lib/utils';
 
 const buttonVariants = cva(
-  'inline-flex items-center justify-center whitespace-nowrap rounded-full text-sm font-semibold tracking-tight transition-all duration-200 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50',
+  'inline-flex items-center justify-center whitespace-nowrap rounded-xl text-sm font-semibold tracking-tight transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background disabled:pointer-events-none disabled:opacity-50',
   {
     variants: {
       variant: {
         default:
-          'bg-neutral-100 text-neutral-950 shadow-[0_18px_60px_-28px_rgba(255,255,255,0.9)] hover:scale-[1.02] hover:bg-white',
+          'bg-foreground text-background shadow-[0_12px_40px_-20px_hsl(var(--foreground)_/_0.35)] hover:-translate-y-0.5 hover:bg-foreground/92',
         outline:
-          'border border-neutral-800 bg-neutral-950/60 text-neutral-100 hover:scale-[1.02] hover:border-neutral-600 hover:bg-neutral-900/80',
+          'border border-border bg-background/85 text-foreground shadow-sm hover:-translate-y-0.5 hover:border-foreground/20 hover:bg-accent/5',
         secondary:
-          'bg-neutral-900/80 text-neutral-100 hover:scale-[1.02] hover:bg-neutral-800',
+          'bg-secondary text-secondary-foreground hover:bg-secondary/80',
+        ghost: 'text-muted-foreground hover:bg-accent/8 hover:text-foreground',
       },
       size: {
-        default: 'h-11 px-5 py-2',
-        sm: 'h-9 px-4',
-        lg: 'h-12 px-8 text-sm',
+        default: 'h-11 px-5 py-2.5',
+        sm: 'h-9 px-3.5',
+        lg: 'h-12 px-6 text-sm',
+        icon: 'h-10 w-10',
       },
     },
     defaultVariants: {

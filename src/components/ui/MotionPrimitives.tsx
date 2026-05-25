@@ -6,12 +6,12 @@ import { motion, type Variants } from 'framer-motion';
 import { cn } from '@/lib/utils';
 
 const revealVariants: Variants = {
-  hidden: { opacity: 0, y: 24 },
+  hidden: { opacity: 0, y: 18 },
   visible: {
     opacity: 1,
     y: 0,
     transition: {
-      duration: 0.5,
+      duration: 0.55,
       ease: [0.22, 1, 0.36, 1],
     },
   },
@@ -21,7 +21,7 @@ const staggerVariants: Variants = {
   hidden: {},
   visible: {
     transition: {
-      staggerChildren: 0.1,
+      staggerChildren: 0.08,
       delayChildren: 0.08,
     },
   },

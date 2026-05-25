@@ -14,19 +14,19 @@ export function GoalsSection() {
   return (
     <section
       id={pageContent.goals.id}
-      className="border-t border-neutral-900/80 py-24"
+      className="scroll-mt-32 border-t border-border/80 py-24 sm:py-32"
     >
-      <div className="grid gap-8 lg:grid-cols-[minmax(0,18rem)_minmax(0,1fr)] lg:items-start">
-        <Reveal className="max-w-sm">
-          <div className="space-y-4">
+      <div className="mx-auto max-w-3xl space-y-12 text-center">
+        <Reveal className="mx-auto max-w-2xl">
+          <div className="space-y-5">
             <Badge variant="secondary" className="w-fit">
               {pageContent.goals.eyebrow}
             </Badge>
             <div className="space-y-3">
-              <h2 className="text-2xl font-semibold text-neutral-100">
+              <h2 className="text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
                 {pageContent.goals.title}
               </h2>
-              <p className="text-base leading-relaxed text-neutral-400">
+              <p className="text-base leading-8 text-muted-foreground sm:text-lg">
                 {pageContent.goals.description}
               </p>
             </div>
@@ -35,12 +35,12 @@ export function GoalsSection() {
         <StaggerList className="space-y-4">
           {goals.focus.map((goal, index) => (
             <StaggerListItem key={goal} className="list-none">
-              <Card className="border-neutral-800/80 bg-neutral-950/55 hover:border-neutral-700">
-                <CardContent className="flex items-start gap-4 p-6">
-                  <span className="mt-0.5 text-sm font-semibold text-neutral-500">
+              <Card className="hover:-translate-y-1 hover:border-accent/30 hover:shadow-[0_28px_70px_-42px_hsl(var(--accent)_/_0.18)]">
+                <CardContent className="flex items-start gap-4 text-left sm:gap-5">
+                  <span className="mt-0.5 inline-flex h-8 min-w-8 items-center justify-center rounded-full border border-border bg-background text-sm font-semibold text-muted-foreground">
                     {String(index + 1).padStart(2, '0')}
                   </span>
-                  <p className="text-base leading-relaxed text-neutral-300">
+                  <p className="text-base leading-8 text-muted-foreground sm:text-lg">
                     {goal}
                   </p>
                 </CardContent>
@@ -48,6 +48,12 @@ export function GoalsSection() {
             </StaggerListItem>
           ))}
         </StaggerList>
+        <Reveal delay={0.08} className="mx-auto max-w-2xl">
+          <p className="text-sm leading-7 text-muted-foreground sm:text-base">
+            Always optimizing for clarity, maintainability, and the kind of
+            frontend quality that feels dependable in real product teams.
+          </p>
+        </Reveal>
       </div>
     </section>
   );

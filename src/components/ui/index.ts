@@ -12,3 +12,4 @@ export {
   StaggerList,
   StaggerListItem,
 } from '@/components/ui/MotionPrimitives';
+export { ThemeToggle } from '@/components/ui/ThemeToggle';
