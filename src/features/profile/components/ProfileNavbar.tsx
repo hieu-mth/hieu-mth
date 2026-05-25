@@ -17,25 +17,25 @@ export function ProfileNavbar({ name }: ProfileNavbarProps) {
   return (
     <header className="sticky top-0 z-50">
       <div className="mx-auto max-w-6xl px-5 pt-4 sm:px-6 lg:px-8">
-        <div className="rounded-[1.5rem] border border-border/70 bg-background/78 px-3 py-3 shadow-[0_16px_40px_-28px_hsl(var(--foreground)_/_0.24)] backdrop-blur-xl supports-[backdrop-filter]:bg-background/68">
-          <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
+        <div className="rounded-[2.2rem] border border-border/40 bg-background/52 px-3 py-2 shadow-[0_24px_48px_-36px_hsl(var(--foreground)_/_0.07)] backdrop-blur-2xl supports-[backdrop-filter]:bg-background/44">
+          <div className="flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
             <Link
               href="#hero"
-              className="min-w-0 rounded-xl px-2 py-1 transition-colors duration-200 hover:text-foreground/86"
+              className="min-w-0 rounded-[1.35rem] px-3.5 py-2 transition-colors duration-300 hover:bg-background/34"
             >
-              <span className="flex items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.22em] text-muted-foreground">
-                <span className="inline-flex h-2 w-2 rounded-full bg-accent shadow-[0_0_12px_hsl(var(--accent)_/_0.45)]" />
-                Available for product teams
+              <span className="flex items-center gap-2 text-[10px] font-semibold uppercase tracking-[0.24em] text-muted-foreground/90">
+                <span className="inline-flex h-1.5 w-1.5 rounded-full bg-accent/90 shadow-[0_0_8px_hsl(var(--accent)_/_0.2)]" />
+                Frontend craft
               </span>
-              <span className="mt-1 block truncate text-sm font-semibold tracking-[0.02em] text-foreground sm:text-[15px]">
+              <span className="mt-1 block truncate text-sm font-semibold tracking-[0.01em] text-foreground sm:text-[15px]">
                 {name}
               </span>
             </Link>
             <div className="hidden flex-1 justify-center md:flex">
               <ProfileNavLinks
                 items={navigation}
-                className="grid grid-flow-col gap-1 rounded-[1.1rem] border border-border/70 bg-muted/30 p-1"
-                itemClassName="min-w-[7rem] text-center text-[13px]"
+                className="grid grid-flow-col gap-1 rounded-[1.4rem] border border-border/35 bg-background/24 p-1"
+                itemClassName="min-w-[6.75rem] text-center text-[13px]"
                 activeClassName="text-foreground"
               />
             </div>
@@ -45,8 +45,8 @@ export function ProfileNavbar({ name }: ProfileNavbarProps) {
           </div>
           <ProfileNavLinks
             items={navigation}
-            className="mt-3 grid grid-cols-3 gap-1 rounded-[1.1rem] border border-border/70 bg-muted/30 p-1 md:hidden"
-            itemClassName="min-w-0 px-2 py-2 text-center text-[13px]"
+            className="mt-2 grid grid-cols-3 gap-1 rounded-[1.35rem] border border-border/35 bg-background/24 p-1 md:hidden"
+            itemClassName="min-w-0 px-2 py-1.5 text-center text-[13px]"
             activeClassName="text-foreground"
           />
         </div>

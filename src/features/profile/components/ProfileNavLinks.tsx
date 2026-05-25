@@ -82,9 +82,9 @@ export function ProfileNavLinks({
             aria-current={isActive ? 'page' : undefined}
             onClick={() => setActiveHref(item.href)}
             className={cn(
-              'relative rounded-xl px-3 py-2 text-sm font-medium text-muted-foreground transition-all duration-200',
+              'relative rounded-full px-3.5 py-1.5 text-[13px] font-medium text-muted-foreground/90 transition-all duration-300',
               'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background',
-              'hover:bg-foreground/5 hover:text-foreground',
+              'hover:text-foreground',
               isActive && 'text-foreground',
               itemClassName,
               isActive && activeClassName,
@@ -93,7 +93,7 @@ export function ProfileNavLinks({
             {isActive ? (
               <motion.span
                 layoutId="profile-nav-active-pill"
-                className="absolute inset-0 -z-10 rounded-xl bg-background shadow-[0_10px_24px_-18px_hsl(var(--foreground)_/_0.28),inset_0_0_0_1px_hsl(var(--border))]"
+                className="absolute inset-0 -z-10 rounded-[1.2rem] bg-background/82 shadow-[0_14px_26px_-24px_hsl(var(--foreground)_/_0.06),inset_0_0_0_1px_hsl(var(--border)_/_0.55)]"
                 transition={{ duration: 0.2, ease: [0.22, 1, 0.36, 1] }}
               />
             ) : null}

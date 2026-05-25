@@ -34,19 +34,22 @@ export function HeroSection() {
   return (
     <section
       id="hero"
-      className="relative scroll-mt-32 py-20 sm:py-24 lg:py-32"
+      className="relative scroll-mt-32 py-20 sm:py-24 lg:py-28"
     >
       <div className="grid items-start gap-12 lg:grid-cols-[minmax(0,1fr)_22rem] lg:gap-14 xl:grid-cols-[minmax(0,1fr)_24rem]">
         <Reveal className="max-w-3xl">
-          <header className="space-y-8 lg:space-y-10">
+          <header className="space-y-7 lg:space-y-9">
             <div className="space-y-5">
-              <Badge variant="default" className="w-fit">
+              <Badge
+                variant="default"
+                className="w-fit border-border/55 bg-background/70 text-foreground shadow-[0_14px_28px_-24px_hsl(var(--foreground)_/_0.1)]"
+              >
                 {basicProfile.role}
               </Badge>
               <div className="space-y-5">
                 <h1 className="max-w-4xl text-5xl font-bold tracking-[-0.04em] text-foreground sm:text-6xl lg:text-7xl xl:text-[5rem]">
                   Hi, I&apos;m{' '}
-                  <span className="text-foreground/70 underline decoration-accent/28 decoration-8 underline-offset-[0.18em]">
+                  <span className="text-foreground/72 underline decoration-accent/14 decoration-[0.34rem] underline-offset-[0.16em]">
                     {firstName}
                   </span>
                 </h1>
@@ -55,18 +58,23 @@ export function HeroSection() {
                 </p>
               </div>
             </div>
-            <div className="flex flex-wrap gap-3">
-              <Button asChild size="lg">
+            <div className="flex flex-wrap gap-3 pt-1">
+              <Button asChild size="lg" className="min-w-[10.5rem] px-8">
                 <a href={pageContent.hero.primaryAction.href}>View Projects</a>
               </Button>
-              <Button asChild variant="outline" size="lg">
+              <Button
+                asChild
+                variant="outline"
+                size="lg"
+                className="min-w-[10.5rem] px-8"
+              >
                 <a href={pageContent.hero.secondaryAction.href}>
                   Current Goals
                 </a>
               </Button>
             </div>
-            <div className="flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-muted-foreground">
-              <span className="font-medium text-foreground/80">
+            <div className="flex flex-wrap items-center gap-x-4 gap-y-2 rounded-full border border-border/50 bg-background/52 px-4 py-2 text-sm text-muted-foreground shadow-[0_18px_34px_-30px_hsl(var(--foreground)_/_0.1)] backdrop-blur-sm">
+              <span className="font-medium text-foreground/82">
                 Focused on product-grade frontend systems
               </span>
               <span className="hidden h-1 w-1 rounded-full bg-border sm:inline-flex" />
@@ -82,8 +90,8 @@ export function HeroSection() {
         </Reveal>
 
         <Reveal delay={0.12}>
-          <Card className="overflow-hidden border-border/90 bg-card/78 lg:mt-3">
-            <CardHeader className="border-b border-border/80 pb-5">
+          <Card className="overflow-hidden border-border/60 bg-card/64 shadow-[0_24px_54px_-40px_hsl(var(--foreground)_/_0.12)] lg:mt-2">
+            <CardHeader className="border-b border-border/60 pb-5">
               <Badge variant="secondary" className="w-fit">
                 {pageContent.hero.signalEyebrow}
               </Badge>
@@ -95,7 +103,7 @@ export function HeroSection() {
               <StaggerList className="grid grid-cols-3 gap-3">
                 {signal.map((item) => (
                   <StaggerListItem key={item.label} className="list-none">
-                    <div className="rounded-2xl border border-border/80 bg-background/70 p-3 text-center">
+                    <div className="rounded-[1.25rem] border border-border/60 bg-background/72 p-3 text-center shadow-[inset_0_1px_0_hsl(var(--background)_/_0.18)]">
                       <p className="text-2xl font-semibold tracking-tight text-foreground">
                         {item.value}
                       </p>
@@ -110,7 +118,7 @@ export function HeroSection() {
                 {strengths.slice(0, 3).map((strength) => (
                   <StaggerListItem
                     key={strength}
-                    className="list-none rounded-2xl border border-border/80 bg-background/70 px-4 py-3 text-sm leading-7 text-muted-foreground transition-colors duration-200 hover:border-accent/20 hover:text-foreground/84"
+                    className="list-none rounded-[1.25rem] border border-border/60 bg-background/72 px-4 py-3 text-sm leading-7 text-muted-foreground transition-colors duration-200 hover:border-accent/14 hover:bg-background/86 hover:text-foreground/84"
                   >
                     {strength}
                   </StaggerListItem>
