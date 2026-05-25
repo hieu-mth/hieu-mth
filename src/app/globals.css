@@ -4,40 +4,46 @@
 
 @layer base {
   :root {
-    --background: 0 0% 4%;
-    --foreground: 0 0% 90%;
-    --card: 0 0% 6%;
-    --card-foreground: 0 0% 90%;
-    --primary: 0 0% 90%;
-    --primary-foreground: 0 0% 6%;
-    --secondary: 0 0% 10%;
-    --secondary-foreground: 0 0% 90%;
-    --muted: 0 0% 10%;
-    --muted-foreground: 0 0% 64%;
-    --accent: 0 0% 10%;
-    --accent-foreground: 0 0% 90%;
-    --border: 0 0% 15%;
-    --input: 0 0% 15%;
-    --ring: 0 0% 64%;
+    --background: 0 0% 100%;
+    --foreground: 240 10% 6%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 8%;
+    --primary: 240 10% 8%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 240 17% 97%;
+    --secondary-foreground: 240 8% 26%;
+    --muted: 240 17% 97%;
+    --muted-foreground: 240 6% 42%;
+    --accent: 221 83% 53%;
+    --accent-foreground: 0 0% 100%;
+    --border: 240 11% 90%;
+    --input: 240 11% 90%;
+    --ring: 221 83% 53%;
+    --grid-line: 240 11% 92%;
+    --spotlight: 221 83% 53%;
     --radius: 0.75rem;
+    color-scheme: light;
   }
 
   .dark {
-    --background: 0 0% 4%;
-    --foreground: 0 0% 90%;
-    --card: 0 0% 6%;
-    --card-foreground: 0 0% 90%;
-    --primary: 0 0% 90%;
-    --primary-foreground: 0 0% 6%;
-    --secondary: 0 0% 10%;
-    --secondary-foreground: 0 0% 90%;
-    --muted: 0 0% 10%;
-    --muted-foreground: 0 0% 64%;
-    --accent: 0 0% 10%;
-    --accent-foreground: 0 0% 90%;
-    --border: 0 0% 15%;
-    --input: 0 0% 15%;
-    --ring: 0 0% 64%;
+    --background: 240 6% 4%;
+    --foreground: 0 0% 97%;
+    --card: 240 5% 7%;
+    --card-foreground: 0 0% 97%;
+    --primary: 0 0% 97%;
+    --primary-foreground: 240 6% 4%;
+    --secondary: 240 5% 10%;
+    --secondary-foreground: 240 5% 78%;
+    --muted: 240 5% 10%;
+    --muted-foreground: 240 5% 64%;
+    --accent: 217 91% 60%;
+    --accent-foreground: 240 6% 4%;
+    --border: 240 4% 16%;
+    --input: 240 4% 16%;
+    --ring: 217 91% 60%;
+    --grid-line: 240 4% 12%;
+    --spotlight: 217 91% 60%;
+    color-scheme: dark;
   }
 
   html {
@@ -51,27 +57,33 @@
   body {
     @apply bg-background text-foreground;
     font-family:
-      'Aptos', 'Segoe UI Variable Text', 'Helvetica Neue', sans-serif;
-    background-image:
-      radial-gradient(
-        circle at top,
-        rgba(255, 255, 255, 0.12),
-        transparent 28%
-      ),
-      linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
-    background-size:
-      auto,
-      72px 72px,
-      72px 72px;
-    background-position:
-      center top,
-      center top,
-      center top;
+      'Inter', 'Segoe UI Variable Text', 'Aptos', 'Helvetica Neue', sans-serif;
+    background-image: radial-gradient(
+      circle at top,
+      hsl(var(--spotlight) / 0.1),
+      transparent 34%
+    );
+    background-size: auto;
+    background-position: center top;
+    transition:
+      background-color 300ms ease,
+      color 300ms ease,
+      border-color 300ms ease;
   }
 
   ::selection {
-    background: rgba(245, 245, 245, 0.14);
-    color: rgb(250, 250, 250);
+    background: hsl(var(--accent) / 0.18);
+    color: hsl(var(--foreground));
+  }
+}
+
+@layer utilities {
+  .scrollbar-none {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-none::-webkit-scrollbar {
+    display: none;
   }
 }
