@@ -68,7 +68,7 @@ export function ExperienceSection() {
                       {pageContent.experience.cardDescription}
                     </CardDescription>
                   </CardHeader>
-                  <CardContent className="space-y-5 sm:space-y-6">
+                  <CardContent className="space-y-5 px-6 py-5 sm:space-y-6 sm:px-7 sm:py-6">
                     <div className="flex flex-col gap-2 rounded-[1.2rem] border border-border/60 bg-background/58 px-4 py-3 text-sm text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
                       <span className="font-medium text-foreground/80">
                         Workstream {String(index + 1).padStart(2, '0')}

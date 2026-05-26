@@ -1,5 +1,6 @@
 import { BackToTop } from '@/components/ui';
 import {
+  ContactSection,
   HeroSection,
   StrengthsSection,
   ThinkingSection,
@@ -18,6 +19,7 @@ export default function Page() {
         <ThinkingSection />
         <ExperienceSection />
         <GoalsSection />
+        <ContactSection />
       </div>
       <BackToTop />
     </main>

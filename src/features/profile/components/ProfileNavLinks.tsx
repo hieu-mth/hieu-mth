@@ -25,8 +25,18 @@ export function ProfileNavLinks({
   ariaLabel = 'Section navigation',
   activeClassName,
 }: ProfileNavLinksProps) {
-  const [activeHref, setActiveHref] = useState<NavigationItem['href']>(
-    items[0]?.href ?? '#hero',
+  const [activeHref, setActiveHref] = useState<NavigationItem['href'] | null>(
+    () => {
+      if (typeof window !== 'undefined') {
+        const currentHash = window.location.hash as NavigationItem['href'];
+
+        if (items.some((item) => item.href === currentHash)) {
+          return currentHash;
+        }
+      }
+
+      return null;
+    },
   );
 
   useEffect(() => {
@@ -42,32 +52,38 @@ export function ProfileNavLinks({
       return;
     }
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        const visibleEntries = entries
-          .filter((entry) => entry.isIntersecting)
-          .sort(
-            (entryA, entryB) =>
-              entryB.intersectionRatio - entryA.intersectionRatio,
-          );
+    const getNextActiveHref = () => {
+      const viewportAnchor = window.innerHeight * 0.3;
+      let nextActive: NavigationItem['href'] | null = null;
 
-        if (!visibleEntries.length) {
-          return;
+      for (const section of sections) {
+        const sectionTop = section.getBoundingClientRect().top;
+
+        if (sectionTop - viewportAnchor <= 0) {
+          nextActive = `#${section.id}`;
+          continue;
         }
 
-        const nextId = visibleEntries[0].target.id;
+        break;
+      }
 
-        setActiveHref(`#${nextId}`);
-      },
-      {
-        rootMargin: '-25% 0px -55% 0px',
-        threshold: [0.2, 0.4, 0.65],
-      },
-    );
+      return nextActive;
+    };
 
-    sections.forEach((section) => observer.observe(section));
+    const syncActiveHref = () => {
+      setActiveHref(getNextActiveHref());
+    };
 
-    return () => observer.disconnect();
+    syncActiveHref();
+    window.addEventListener('scroll', syncActiveHref, { passive: true });
+    window.addEventListener('resize', syncActiveHref);
+    window.addEventListener('hashchange', syncActiveHref);
+
+    return () => {
+      window.removeEventListener('scroll', syncActiveHref);
+      window.removeEventListener('resize', syncActiveHref);
+      window.removeEventListener('hashchange', syncActiveHref);
+    };
   }, [items]);
 
   return (
@@ -80,12 +96,11 @@ export function ProfileNavLinks({
             key={item.href}
             href={item.href}
             aria-current={isActive ? 'page' : undefined}
-            onClick={() => setActiveHref(item.href)}
             className={cn(
               'relative rounded-full px-3.5 py-1.5 text-[13px] font-medium text-muted-foreground/90 transition-all duration-300',
               'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background',
               'hover:text-foreground',
-              isActive && 'text-foreground',
+              isActive && 'font-semibold text-foreground',
               itemClassName,
               isActive && activeClassName,
             )}
@@ -93,7 +108,7 @@ export function ProfileNavLinks({
             {isActive ? (
               <motion.span
                 layoutId="profile-nav-active-pill"
-                className="absolute inset-0 -z-10 rounded-[1.25rem] bg-background/78 shadow-[0_14px_24px_-24px_hsl(var(--foreground)_/_0.05),inset_0_0_0_1px_hsl(var(--border)_/_0.45)]"
+                className="absolute inset-0 -z-10 rounded-[1.25rem] bg-background/78 shadow-[0_14px_24px_-24px_hsl(var(--foreground)_/_0.05)]"
                 transition={{ duration: 0.2, ease: [0.22, 1, 0.36, 1] }}
               />
             ) : null}

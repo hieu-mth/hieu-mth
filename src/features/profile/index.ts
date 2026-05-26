@@ -1,4 +1,5 @@
 export {
+  ContactSection,
   ExperienceSection,
   GoalsSection,
   HeroSection,

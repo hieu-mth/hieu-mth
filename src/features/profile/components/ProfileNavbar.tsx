@@ -1,4 +1,4 @@
-import Link from 'next/link';
+'use client';
 
 import { ThemeToggle } from '@/components/ui';
 import { ProfileNavLinks } from '@/features/profile/components/ProfileNavLinks';
@@ -8,19 +8,35 @@ type ProfileNavbarProps = {
 };
 
 const navigation = [
-  { label: 'Hero', href: '#hero' },
   { label: 'Strengths', href: '#strengths' },
   { label: 'Experience', href: '#experience' },
+  { label: 'Contact', href: '#contact' },
 ] satisfies Array<{ label: string; href: `#${string}` }>;
 
 export function ProfileNavbar({ name }: ProfileNavbarProps) {
+  const handleHeroClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
+    event.preventDefault();
+
+    const heroSection = document.getElementById('hero');
+
+    if (!heroSection) {
+      window.location.hash = 'hero';
+
+      return;
+    }
+
+    heroSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    window.history.replaceState(null, '', '#hero');
+  };
+
   return (
     <header className="sticky top-0 z-50">
       <div className="mx-auto max-w-6xl px-5 pt-4 sm:px-6 lg:px-8">
         <div className="rounded-[2.2rem] border border-border/30 bg-background/46 px-3.5 py-2 shadow-[0_26px_52px_-38px_hsl(var(--foreground)_/_0.06)] backdrop-blur-2xl supports-[backdrop-filter]:bg-background/40">
           <div className="flex flex-col gap-2.5 md:grid md:grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] md:items-center md:gap-4">
-            <Link
+            <a
               href="#hero"
+              onClick={handleHeroClick}
               className="min-w-0 justify-self-start rounded-[1.45rem] px-4 py-2 transition-colors duration-300 hover:bg-background/28"
             >
               <span className="flex items-center gap-2 text-[10px] font-semibold uppercase tracking-[0.24em] text-muted-foreground/90">
@@ -30,11 +46,11 @@ export function ProfileNavbar({ name }: ProfileNavbarProps) {
               <span className="mt-1 block truncate text-sm font-semibold tracking-[0.01em] text-foreground sm:text-[15px]">
                 {name}
               </span>
-            </Link>
+            </a>
             <div className="hidden justify-center md:flex">
               <ProfileNavLinks
                 items={navigation}
-                className="grid grid-flow-col gap-1 rounded-[1.5rem] border border-border/28 bg-background/20 p-1.5"
+                className="grid grid-flow-col gap-1"
                 itemClassName="min-w-[7.25rem] text-center text-[13px]"
                 activeClassName="text-foreground"
               />
@@ -45,7 +61,7 @@ export function ProfileNavbar({ name }: ProfileNavbarProps) {
           </div>
           <ProfileNavLinks
             items={navigation}
-            className="mt-2 grid grid-cols-3 gap-1 rounded-[1.35rem] border border-border/28 bg-background/20 p-1 md:hidden"
+            className="mt-2 grid grid-cols-3 gap-1 md:hidden"
             itemClassName="min-w-0 px-2 py-1.5 text-center text-[13px]"
             activeClassName="text-foreground"
           />

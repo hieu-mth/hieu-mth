@@ -50,12 +50,19 @@ export type ExperienceContent = SectionContent & {
   cardDescription: string;
 };
 
+export type ContactContent = SectionContent & {
+  primaryAction: CallToAction;
+  secondaryAction: CallToAction;
+  tertiaryAction?: CallToAction;
+};
+
 export type ProfilePageContent = {
   hero: HeroContent;
   strengths: StrengthsContent;
   thinking: SectionContent;
   experience: ExperienceContent;
   goals: SectionContent;
+  contact: ContactContent;
 };
 
 export type ProfileData = {

@@ -116,4 +116,23 @@ export const pageContent = {
     description:
       'The next stretch is centered on product ownership, stronger fundamentals, and sharper communication at technical depth.',
   },
+  contact: {
+    id: 'contact',
+    eyebrow: 'Contact',
+    title: "Let's connect around product-grade frontend work.",
+    description:
+      'Open to conversations about scalable React systems, frontend architecture, and delivery quality for real product teams.',
+    primaryAction: {
+      label: 'Email Me',
+      href: 'mailto:mthh.shun.1804@gmail.com',
+    },
+    secondaryAction: {
+      label: 'GitHub Profile',
+      href: 'https://github.com/hieu-mth',
+    },
+    tertiaryAction: {
+      label: 'Project Source',
+      href: 'https://github.com/hieu-mth/hieu-mth',
+    },
+  },
 } satisfies ProfilePageContent;

@@ -36,7 +36,7 @@ export function ThinkingSection() {
           {thinking.map((item, index) => (
             <StaggerListItem key={item.title} className="list-none">
               <Card className="relative overflow-visible border-border/55 bg-card/58 shadow-[0_22px_44px_-38px_hsl(var(--foreground)_/_0.08)] transition-all duration-300 hover:border-accent/14 hover:bg-card/68 hover:shadow-[0_24px_52px_-40px_hsl(var(--foreground)_/_0.1)]">
-                <div className="absolute -left-[2.15rem] top-6 h-3.5 w-3.5 rounded-full border border-accent/18 bg-background shadow-[0_0_0_6px_hsl(var(--background))] sm:-left-[2.65rem]" />
+                <div className="absolute top-6 h-3.5 w-3.5 rounded-full border border-accent/18 bg-background shadow-[0_0_0_6px_hsl(var(--background))] sm:-left-[2.55rem] -left-[2rem]" />
                 <CardHeader className="gap-4 pb-3">
                   <div className="flex items-center gap-3">
                     <Badge

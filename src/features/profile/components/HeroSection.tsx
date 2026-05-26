@@ -99,7 +99,7 @@ export function HeroSection() {
                 {pageContent.hero.signalTitle}
               </CardTitle>
             </CardHeader>
-            <CardContent className="space-y-6">
+            <CardContent className="space-y-6 px-6 py-5 sm:px-7 sm:py-6">
               <StaggerList className="grid grid-cols-3 gap-3">
                 {signal.map((item) => (
                   <StaggerListItem key={item.label} className="list-none">

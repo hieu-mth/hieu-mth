@@ -38,7 +38,7 @@ export function StrengthsSection() {
         {strengths.map((strength, index) => (
           <StaggerListItem key={strength} className="list-none">
             <Card className="group h-full border-border/60 bg-card/62 shadow-[0_22px_46px_-38px_hsl(var(--foreground)_/_0.1)] hover:-translate-y-1 hover:border-accent/18 hover:shadow-[0_28px_60px_-42px_hsl(var(--foreground)_/_0.12)]">
-              <CardContent className="flex h-full flex-col gap-8 sm:gap-10">
+              <CardContent className="flex h-full flex-col gap-8 px-6 py-6 sm:gap-10 sm:px-7 sm:py-7">
                 <div className="flex items-center justify-between">
                   <Badge
                     variant="outline"

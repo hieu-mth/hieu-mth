@@ -39,11 +39,11 @@ export function GoalsSection() {
           {goals.focus.map((goal, index) => (
             <StaggerListItem key={goal} className="list-none">
               <Card className="border-border/60 bg-card/62 shadow-[0_24px_52px_-40px_hsl(var(--foreground)_/_0.1)] hover:-translate-y-1 hover:border-accent/18 hover:shadow-[0_28px_60px_-42px_hsl(var(--foreground)_/_0.12)]">
-                <CardContent className="flex items-start gap-4 text-left sm:gap-5">
-                  <span className="mt-0.5 inline-flex h-8 min-w-8 items-center justify-center rounded-full border border-border/60 bg-background/72 text-sm font-semibold text-muted-foreground">
+                <CardContent className="flex items-center gap-4 px-6 py-6 text-left sm:gap-5 sm:px-7 sm:py-7">
+                  <span className="inline-flex h-8 min-w-8 items-center justify-center rounded-full border border-border/60 bg-background/72 text-sm font-semibold text-muted-foreground">
                     {String(index + 1).padStart(2, '0')}
                   </span>
-                  <p className="text-base leading-8 text-muted-foreground sm:text-lg">
+                  <p className="flex-1 text-base leading-8 text-muted-foreground sm:text-lg">
                     {goal}
                   </p>
                 </CardContent>

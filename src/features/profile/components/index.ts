@@ -1,3 +1,4 @@
+export { ContactSection } from '@/features/profile/components/ContactSection';
 export { ExperienceSection } from '@/features/profile/components/ExperienceSection';
 export { GoalsSection } from '@/features/profile/components/GoalsSection';
 export { HeroSection } from '@/features/profile/components/HeroSection';
