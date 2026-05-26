@@ -68,7 +68,7 @@ export function ThemeToggle() {
       variant="ghost"
       size="sm"
       onClick={toggleTheme}
-      className="group rounded-[1.4rem] border border-border/35 bg-background/24 p-0 text-foreground/78 shadow-[0_12px_24px_-22px_hsl(var(--foreground)_/_0.06)] hover:bg-background/42"
+      className="group rounded-[1.5rem] border border-border/28 bg-background/20 p-0 text-foreground/78 shadow-[0_12px_22px_-22px_hsl(var(--foreground)_/_0.05)] hover:bg-background/34"
       aria-label={
         mounted
           ? `Switch to ${theme === 'dark' ? 'light' : 'dark'} theme`

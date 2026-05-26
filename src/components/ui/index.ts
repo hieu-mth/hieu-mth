@@ -1,4 +1,5 @@
 export { Badge } from '@/components/ui/Badge';
+export { BackToTop } from '@/components/ui/BackToTop';
 export { Button } from '@/components/ui/Button';
 export {
   Card,

@@ -1,3 +1,4 @@
+import { BackToTop } from '@/components/ui';
 import {
   HeroSection,
   StrengthsSection,
@@ -18,6 +19,7 @@ export default function Page() {
         <ExperienceSection />
         <GoalsSection />
       </div>
+      <BackToTop />
     </main>
   );
 }

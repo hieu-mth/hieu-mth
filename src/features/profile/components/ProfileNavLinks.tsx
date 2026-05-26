@@ -93,7 +93,7 @@ export function ProfileNavLinks({
             {isActive ? (
               <motion.span
                 layoutId="profile-nav-active-pill"
-                className="absolute inset-0 -z-10 rounded-[1.2rem] bg-background/82 shadow-[0_14px_26px_-24px_hsl(var(--foreground)_/_0.06),inset_0_0_0_1px_hsl(var(--border)_/_0.55)]"
+                className="absolute inset-0 -z-10 rounded-[1.25rem] bg-background/78 shadow-[0_14px_24px_-24px_hsl(var(--foreground)_/_0.05),inset_0_0_0_1px_hsl(var(--border)_/_0.45)]"
                 transition={{ duration: 0.2, ease: [0.22, 1, 0.36, 1] }}
               />
             ) : null}
