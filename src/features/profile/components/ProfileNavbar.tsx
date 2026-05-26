@@ -1,5 +1,7 @@
 'use client';
 
+import type { MouseEvent } from 'react';
+
 import { ThemeToggle } from '@/components/ui';
 import { ProfileNavLinks } from '@/features/profile/components/ProfileNavLinks';
 
@@ -14,7 +16,7 @@ const navigation = [
 ] satisfies Array<{ label: string; href: `#${string}` }>;
 
 export function ProfileNavbar({ name }: ProfileNavbarProps) {
-  const handleHeroClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
+  const handleHeroClick = (event: MouseEvent<HTMLAnchorElement>) => {
     event.preventDefault();
 
     const heroSection = document.getElementById('hero');
@@ -33,7 +35,7 @@ export function ProfileNavbar({ name }: ProfileNavbarProps) {
     <header className="sticky top-0 z-50">
       <div className="mx-auto max-w-6xl px-5 pt-4 sm:px-6 lg:px-8">
         <div className="rounded-[2.2rem] border border-border/30 bg-background/46 px-3.5 py-2 shadow-[0_26px_52px_-38px_hsl(var(--foreground)_/_0.06)] backdrop-blur-2xl supports-[backdrop-filter]:bg-background/40">
-          <div className="flex flex-col gap-2.5 md:grid md:grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] md:items-center md:gap-4">
+          <div className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-3 md:grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] md:gap-4">
             <a
               href="#hero"
               onClick={handleHeroClick}

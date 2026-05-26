@@ -68,7 +68,7 @@ export function ContactSection() {
                 </div>
               </div>
 
-              <div className="flex flex-wrap items-center justify-center gap-3">
+              <div className="grid gap-3 sm:flex sm:flex-wrap sm:items-center sm:justify-center">
                 {contactActions.map((action) => {
                   const isExternal =
                     action.href.startsWith('http') ||
@@ -80,7 +80,7 @@ export function ContactSection() {
                       asChild
                       variant={action.variant}
                       size="lg"
-                      className="min-w-[11rem] px-8"
+                      className="w-full min-w-0 px-8 sm:w-auto sm:min-w-[11rem]"
                     >
                       <a
                         href={action.href}
