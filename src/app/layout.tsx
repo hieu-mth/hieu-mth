@@ -9,13 +9,10 @@ import { ProfileNavbar } from '@/features/profile';
 const themeScript = `(() => {
   const storageKey = 'portfolio-theme';
   const root = document.documentElement;
-  const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
   const storedTheme = window.localStorage.getItem(storageKey);
   const resolvedTheme = storedTheme === 'light' || storedTheme === 'dark'
     ? storedTheme
-    : mediaQuery.matches
-      ? 'dark'
-      : 'light';
+    : 'dark';
 
   root.classList.toggle('dark', resolvedTheme === 'dark');
 })();`;

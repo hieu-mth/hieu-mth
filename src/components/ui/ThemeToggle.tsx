@@ -35,9 +35,7 @@ export function ThemeToggle({ copy }: ThemeToggleProps) {
   useEffect(() => {
     const storedTheme = window.localStorage.getItem(storageKey);
     const initialTheme =
-      storedTheme === 'light' || storedTheme === 'dark'
-        ? storedTheme
-        : getSystemTheme();
+      storedTheme === 'light' || storedTheme === 'dark' ? storedTheme : 'dark';
 
     setTheme(initialTheme);
     applyTheme(initialTheme);

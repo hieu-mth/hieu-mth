@@ -2,65 +2,79 @@
   "basicProfile": {
     "name": "Mai Tran Huu Hieu",
     "role": "Senior Frontend Engineer",
-    "tagline": "Focused on scalable React systems, enterprise architecture, and developer productivity."
+    "tagline": "7 years of software development experience focused on React, frontend architecture, and building scalable systems in enterprise environments."
   },
   "strengths": [
-    "Design scalable frontend architecture for enterprise systems",
-    "Build reusable component & field systems",
-    "Optimize rendering & application performance",
-    "Lead code review & onboard developers",
-    "Apply AI to improve development workflows"
+    "Design and build frontend architecture for large-scale enterprise systems",
+    "Build reusable component systems, field systems, and shared UI frameworks",
+    "Optimize React performance for complex screens and business flows",
+    "Work across frontend, backend integration, and database concerns",
+    "Lead code reviews, onboarding, and skill development within the team",
+    "Apply AI to improve engineering workflow, testing, and technical productivity"
   ],
   "thinking": [
     {
-      "title": "System Thinking",
-      "description": "Focus on scalability, maintainability, and reuse"
+      "title": "Simplicity first",
+      "description": "Start with solutions that are simple, understandable, and maintainable before adding more complexity."
     },
     {
-      "title": "Problem Solving",
-      "description": "Identify root causes and evaluate trade-offs"
+      "title": "Clear trade-offs",
+      "description": "There is no perfect solution. Every technical decision is a trade-off between cost, performance, scalability, and delivery speed."
     },
     {
-      "title": "Code Quality",
-      "description": "Prioritize readability and maintainability"
+      "title": "System thinking",
+      "description": "Care about consistency, reuse, and the long-term impact of technical decisions across the whole system."
     },
     {
-      "title": "Productivity",
-      "description": "Leverage AI to improve workflows"
+      "title": "AI as a support tool",
+      "description": "Use AI to accelerate research, testing, and development while keeping technical accountability and engineering judgment in human hands."
     }
   ],
   "experiences": [
     {
-      "title": "Enterprise React Platform",
-      "role": "Tech SubLeader",
+      "title": "Large Enterprise React Platform",
+      "role": "Technical SubLeader",
       "highlights": [
-        "Designed reusable systems",
-        "Improved testing workflow",
-        "Led onboarding"
+        "Designed and optimized shared UI systems used across multiple business modules",
+        "Built reusable field systems, table systems, and dynamic configuration mechanisms",
+        "Reviewed code, onboarded new members, and supported developers working in a large codebase",
+        "Built testing workflows with Vitest, Playwright, and AI-assisted development practices"
       ]
     },
     {
-      "title": "Dashboard System",
+      "title": "React Dashboard Platform",
+      "role": "Main Developer",
+      "highlights": [
+        "Started the project from scratch with Vite, TailwindCSS, and Redux Toolkit",
+        "Designed the frontend architecture and reusable systems for the dashboard",
+        "Improved performance with lazy loading, memoization, and better data flow design",
+        "Reduced production risk through clearer engineering and testing practices"
+      ]
+    },
+    {
+      "title": "React + Java Enterprise System",
       "role": "Key Member",
       "highlights": [
-        "Built from scratch",
-        "Designed architecture",
-        "Optimized performance"
+        "Contributed to a system migration from React 15 to React 16",
+        "Built both frontend and backend parts of business features",
+        "Worked directly with clients to analyze requirements and propose solutions",
+        "Implemented automation testing with Cypress and improved rendering performance"
       ]
     }
   ],
   "goals": {
     "focus": [
-      "Transition to product-level engineering",
-      "Strengthen CS fundamentals",
-      "Improve technical communication"
+      "Grow stronger in designing frontend systems at product scale",
+      "Strengthen foundations in computer science, JavaScript, and frontend internals",
+      "Improve technical leadership, mentoring, and technical communication",
+      "Move closer to product-level engineering"
     ]
   },
   "pageContent": {
     "navbar": {
       "heroHref": "#hero",
-      "brandEyebrow": "Frontend craft",
-      "navigationAriaLabel": "Section navigation",
+      "brandEyebrow": "Senior Frontend Engineer",
+      "navigationAriaLabel": "Navigate page sections",
       "items": [
         {
           "label": "Strengths",
@@ -80,69 +94,82 @@
       "id": "hero",
       "headingPrefix": "Hi, I'm",
       "primaryAction": {
-        "label": "Explore experience",
+        "label": "View experience",
         "href": "#experience"
       },
       "secondaryAction": {
-        "label": "View current goals",
+        "label": "Current goals",
         "href": "#goals"
       },
-      "signalEyebrow": "Profile signal",
-      "signalTitle": "Scalable frontend systems",
-      "signalLabels": ["Strengths", "Principles", "Projects"],
-      "summaryItems": [
-        "Focused on product-grade frontend systems",
-        "Readable interfaces",
-        "Scalable delivery"
+      "signalEyebrow": "Senior Frontend Engineer",
+      "signalTitle": "React, Frontend Architecture & Technical Leadership",
+      "signalItems": [
+        {
+          "label": "Years",
+          "value": "07"
+        },
+        {
+          "label": "Systems",
+          "value": "06"
+        },
+        {
+          "label": "Projects",
+          "value": "07"
+        }
       ],
-      "supportingText": "Shipping readable systems, scalable interfaces, and product-minded frontend foundations."
+      "summaryItems": [
+        "7 years of software development experience",
+        "React and large-scale enterprise systems",
+        "Architecture, mentoring, and team effectiveness"
+      ],
+      "supportingText": "Focused on building frontend systems that scale, stay maintainable, and help teams work more effectively over the long term."
     },
     "strengths": {
       "id": "strengths",
       "eyebrow": "Strengths",
-      "title": "Delivery systems with a product-grade finish.",
-      "description": "The focus is repeatable frontend architecture, maintainable systems, and execution quality that stays readable under scale.",
+      "title": "Building frontend systems that scale, stay maintainable, and grow sustainably.",
+      "description": "A mix of hands-on experience, system thinking, and technical quality applied to solutions that fit real product and team needs.",
       "cardEyebrow": "Capability",
       "itemTitlePrefix": "Capability"
     },
     "thinking": {
       "id": "thinking",
       "eyebrow": "Thinking",
-      "title": "Principles for systems, trade-offs, and execution.",
-      "description": "The operating model stays pragmatic: identify the root cause, keep the path clear, and optimize for scale without adding friction."
+      "title": "Making technical decisions through context, trade-offs, and long-term value.",
+      "description": "Prioritize clarity, maintainability, and practicality instead of chasing complexity that does not create proportional value."
     },
     "experience": {
       "id": "experience",
       "eyebrow": "Experience",
-      "title": "Shipping foundations that teams can build on.",
-      "description": "Experience spans architecture, onboarding, performance, and shared systems that improve the speed and consistency of product delivery.",
-      "metaLabel": "Selected work",
-      "cardDescription": "A concise track record of systems work, delivery quality, and practical leadership.",
+      "title": "Building technical foundations that help teams move faster and stay more stable.",
+      "description": "Experience spans feature development, frontend system design, shared platform work, testing, and improvements to the software delivery process.",
+      "metaLabel": "Featured experience",
+      "cardDescription": "Projects that represent experience across frontend architecture, reusable systems, delivery quality, and technical leadership.",
       "workstreamLabel": "Workstream",
       "focusAreasLabel": "focus areas"
     },
     "goals": {
       "id": "goals",
       "eyebrow": "Goals",
-      "title": "Focused growth, kept simple.",
-      "description": "The next stretch is centered on product ownership, stronger fundamentals, and sharper communication at technical depth.",
-      "closingNote": "Always optimizing for clarity, maintainability, and the kind of frontend quality that feels dependable in real product teams."
+      "title": "Continuing toward product-level engineering.",
+      "description": "The current focus is deeper frontend architecture, system design, stronger theoretical foundations, and stronger technical leadership in product environments.",
+      "closingNote": "Always aiming for solutions that are clear, practical, and valuable over the long term for both product and team."
     },
     "contact": {
       "id": "contact",
       "eyebrow": "Contact",
-      "title": "Let's connect around product-grade frontend work.",
-      "description": "Open to conversations about scalable React systems, frontend architecture, and delivery quality for real product teams.",
+      "title": "Happy to connect and talk about frontend engineering.",
+      "description": "Always open to conversations around React, frontend architecture, testing, developer productivity, and interesting technical challenges.",
       "primaryAction": {
-        "label": "Email Me",
+        "label": "Send email",
         "href": "mailto:mthh.shun.1804@gmail.com"
       },
       "secondaryAction": {
-        "label": "GitHub Profile",
+        "label": "Personal GitHub",
         "href": "https://github.com/hieu-mth"
       },
       "tertiaryAction": {
-        "label": "Project Source",
+        "label": "Portfolio source",
         "href": "https://github.com/hieu-mth/hieu-mth"
       }
     },
@@ -164,7 +191,7 @@
           },
           {
             "value": "vi",
-            "label": "Vietnamese",
+            "label": "Tiếng Việt",
             "shortLabel": "VI"
           }
         ]

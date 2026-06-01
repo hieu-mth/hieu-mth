@@ -4,23 +4,23 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
+    --background: 222 28% 97%;
     --foreground: 240 10% 6%;
-    --card: 0 0% 100%;
+    --card: 220 24% 98.8%;
     --card-foreground: 240 10% 8%;
     --primary: 240 10% 8%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 240 17% 97%;
+    --secondary: 220 22% 95.8%;
     --secondary-foreground: 240 8% 26%;
-    --muted: 240 17% 97%;
-    --muted-foreground: 240 6% 42%;
-    --accent: 221 83% 53%;
+    --muted: 220 22% 95.8%;
+    --muted-foreground: 225 8% 42%;
+    --accent: 217 84% 61%;
     --accent-foreground: 0 0% 100%;
-    --border: 240 11% 90%;
-    --input: 240 11% 90%;
-    --ring: 221 83% 53%;
-    --grid-line: 240 11% 92%;
-    --spotlight: 221 83% 53%;
+    --border: 220 18% 87%;
+    --input: 220 18% 87%;
+    --ring: 217 84% 61%;
+    --grid-line: 220 18% 90%;
+    --spotlight: 217 74% 66%;
     --radius: 0.75rem;
     color-scheme: light;
   }
@@ -58,17 +58,29 @@
     @apply bg-background text-foreground;
     font-family:
       'Inter', 'Segoe UI Variable Text', 'Aptos', 'Helvetica Neue', sans-serif;
-    background-image: radial-gradient(
-      circle at top,
-      hsl(var(--spotlight) / 0.1),
-      transparent 34%
-    );
+    background-image: none;
+    background-attachment: scroll;
     background-size: auto;
     background-position: center top;
     transition:
       background-color 300ms ease,
       color 300ms ease,
       border-color 300ms ease;
+  }
+
+  html:not(.dark) body {
+    background-image: none;
+    background-attachment: scroll;
+    background-size: auto;
+    background-position: center top;
+  }
+
+  .dark body {
+    background-image: radial-gradient(
+      circle at top,
+      hsl(var(--spotlight) / 0.1),
+      transparent 34%
+    );
   }
 
   ::selection {
