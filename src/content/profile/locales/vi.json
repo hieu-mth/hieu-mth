@@ -1,65 +1,79 @@
 {
   "basicProfile": {
-    "name": "Mai Tran Huu Hieu",
+    "name": "Mai Trần Hữu Hiếu",
     "role": "Senior Frontend Engineer",
-    "tagline": "Tập trung vào hệ thống React có khả năng mở rộng, kiến trúc enterprise và năng suất phát triển."
+    "tagline": "7 năm kinh nghiệm phát triển phần mềm với trọng tâm là React, frontend architecture và xây dựng các hệ thống có khả năng mở rộng trong môi trường enterprise."
   },
   "strengths": [
-    "Thiết kế kiến trúc frontend có thể mở rộng cho hệ thống enterprise",
-    "Xây dựng hệ thống component và field có thể tái sử dụng",
-    "Tối ưu rendering và hiệu năng ứng dụng",
-    "Dẫn dắt code review và onboarding cho developer",
-    "Ứng dụng AI để cải thiện quy trình phát triển"
+    "Thiết kế và phát triển kiến trúc frontend cho các hệ thống enterprise quy mô lớn",
+    "Xây dựng reusable component systems, field systems và common UI frameworks",
+    "Tối ưu hiệu năng React cho các màn hình và luồng nghiệp vụ phức tạp",
+    "Phối hợp hiệu quả giữa frontend, backend và database trong các hệ thống enterprise",
+    "Code review, onboarding và hỗ trợ phát triển kỹ năng cho thành viên trong nhóm",
+    "Ứng dụng AI để cải thiện quy trình phát triển, kiểm thử và năng suất kỹ thuật"
   ],
   "thinking": [
     {
+      "title": "Đơn giản trước",
+      "description": "Ưu tiên giải pháp đơn giản, dễ hiểu và dễ bảo trì trước khi tăng thêm độ phức tạp."
+    },
+    {
+      "title": "Trade-off rõ ràng",
+      "description": "Không có giải pháp hoàn hảo. Mỗi quyết định kỹ thuật đều là sự đánh đổi giữa chi phí, hiệu năng, khả năng mở rộng và tốc độ phát triển."
+    },
+    {
       "title": "Tư duy hệ thống",
-      "description": "Ưu tiên khả năng mở rộng, dễ bảo trì và tái sử dụng"
+      "description": "Quan tâm đến tính nhất quán, khả năng tái sử dụng và tác động dài hạn của quyết định kỹ thuật đối với toàn bộ hệ thống."
     },
     {
-      "title": "Giải quyết vấn đề",
-      "description": "Xác định gốc rễ và đánh giá trade-off rõ ràng"
-    },
-    {
-      "title": "Chất lượng mã nguồn",
-      "description": "Ưu tiên tính dễ đọc và dễ bảo trì"
-    },
-    {
-      "title": "Năng suất",
-      "description": "Tận dụng AI để cải thiện workflow làm việc"
+      "title": "AI là công cụ hỗ trợ",
+      "description": "Sử dụng AI để tăng tốc nghiên cứu, kiểm thử và phát triển, nhưng vẫn giữ trách nhiệm kỹ thuật và tư duy phản biện của người kỹ sư."
     }
   ],
   "experiences": [
     {
-      "title": "Nền tảng React cho enterprise",
-      "role": "Tech SubLeader",
+      "title": "Large Enterprise React Platform",
+      "role": "Technical SubLeader",
       "highlights": [
-        "Thiết kế hệ thống tái sử dụng",
-        "Cải thiện quy trình testing",
-        "Dẫn dắt onboarding"
+        "Thiết kế và tối ưu các hệ thống UI dùng chung phục vụ nhiều module nghiệp vụ",
+        "Xây dựng reusable field systems, table systems và cơ chế cấu hình động",
+        "Code review, onboarding và hỗ trợ thành viên mới làm việc với codebase lớn",
+        "Xây dựng quy trình testing với Vitest, Playwright và AI-assisted workflow"
       ]
     },
     {
-      "title": "Hệ thống dashboard",
+      "title": "React Dashboard Platform",
+      "role": "Main Developer",
+      "highlights": [
+        "Khởi tạo dự án từ đầu với Vite, TailwindCSS và Redux Toolkit",
+        "Thiết kế kiến trúc frontend và các hệ thống tái sử dụng cho dashboard",
+        "Tối ưu hiệu năng bằng lazy loading, memoization và tối ưu luồng dữ liệu",
+        "Giảm rủi ro production thông qua quy trình phát triển và kiểm thử rõ ràng"
+      ]
+    },
+    {
+      "title": "React + Java Enterprise System",
       "role": "Key Member",
       "highlights": [
-        "Xây dựng từ đầu",
-        "Thiết kế kiến trúc",
-        "Tối ưu hiệu năng"
+        "Tham gia migration hệ thống từ React 15 lên React 16",
+        "Phát triển cả frontend và backend cho các tính năng nghiệp vụ",
+        "Làm việc trực tiếp với khách hàng để phân tích yêu cầu và đề xuất giải pháp",
+        "Xây dựng automation testing bằng Cypress và tối ưu rendering performance"
       ]
     }
   ],
   "goals": {
     "focus": [
-      "Chuyển dịch sang vai trò product-level engineering",
-      "Củng cố nền tảng khoa học máy tính",
-      "Nâng cao giao tiếp kỹ thuật"
+      "Phát triển năng lực thiết kế hệ thống frontend ở quy mô sản phẩm",
+      "Củng cố nền tảng khoa học máy tính, JavaScript và frontend internals",
+      "Nâng cao khả năng technical leadership, mentoring và giao tiếp kỹ thuật",
+      "Tiến gần hơn tới Product-Level Engineering"
     ]
   },
   "pageContent": {
     "navbar": {
       "heroHref": "#hero",
-      "brandEyebrow": "Frontend craft",
+      "brandEyebrow": "Senior Frontend Engineer",
       "navigationAriaLabel": "Điều hướng các phần nội dung",
       "items": [
         {
@@ -84,55 +98,68 @@
         "href": "#experience"
       },
       "secondaryAction": {
-        "label": "Xem mục tiêu hiện tại",
+        "label": "Mục tiêu hiện tại",
         "href": "#goals"
       },
-      "signalEyebrow": "Tín hiệu hồ sơ",
-      "signalTitle": "Hệ thống frontend có thể mở rộng",
-      "signalLabels": ["Điểm mạnh", "Nguyên tắc", "Dự án"],
-      "summaryItems": [
-        "Tập trung vào frontend ở mức sản phẩm",
-        "Giao diện dễ đọc",
-        "Khả năng mở rộng khi delivery"
+      "signalEyebrow": "Senior Frontend Engineer",
+      "signalTitle": "React, Frontend Architecture & Technical Leadership",
+      "signalItems": [
+        {
+          "label": "Năm",
+          "value": "07"
+        },
+        {
+          "label": "Hệ thống",
+          "value": "06"
+        },
+        {
+          "label": "Dự án",
+          "value": "07"
+        }
       ],
-      "supportingText": "Xây dựng hệ thống dễ đọc, giao diện có thể mở rộng và nền tảng frontend theo tư duy sản phẩm."
+      "summaryItems": [
+        "7 năm kinh nghiệm phát triển phần mềm",
+        "React và hệ thống enterprise quy mô lớn",
+        "Kiến trúc, mentoring và AI-assisted workflow"
+      ],
+      "supportingText": "Tập trung vào xây dựng các hệ thống frontend có khả năng mở rộng, dễ bảo trì và giúp đội ngũ phát triển hiệu quả hơn trong dài hạn."
     },
     "strengths": {
       "id": "strengths",
       "eyebrow": "Điểm mạnh",
-      "title": "Triển khai hệ thống với độ hoàn thiện ở mức sản phẩm.",
-      "description": "Trọng tâm là kiến trúc frontend có thể lặp lại, hệ thống dễ bảo trì và chất lượng thực thi vẫn rõ ràng khi quy mô tăng lên.",
+      "title": "Xây dựng frontend có khả năng mở rộng, dễ bảo trì và phát triển bền vững.",
+      "description": "Kết hợp giữa kinh nghiệm thực chiến, tư duy hệ thống và chất lượng kỹ thuật để tạo ra các giải pháp phù hợp với nhu cầu thực tế của sản phẩm và đội ngũ.",
       "cardEyebrow": "Năng lực",
       "itemTitlePrefix": "Năng lực"
     },
     "thinking": {
       "id": "thinking",
       "eyebrow": "Tư duy",
-      "title": "Nguyên tắc cho hệ thống, trade-off và thực thi.",
-      "description": "Cách làm việc luôn thực dụng: xác định đúng gốc rễ, giữ hướng đi rõ ràng và tối ưu cho quy mô mà không tạo thêm ma sát."
+      "title": "Đưa ra quyết định kỹ thuật dựa trên bối cảnh, trade-off và giá trị dài hạn.",
+      "description": "Ưu tiên sự rõ ràng, khả năng bảo trì và tính thực tiễn thay vì theo đuổi sự phức tạp không mang lại giá trị tương xứng."
     },
     "experience": {
       "id": "experience",
       "eyebrow": "Kinh nghiệm",
-      "title": "Xây nền tảng để team có thể tiếp tục phát triển.",
-      "description": "Kinh nghiệm trải dài từ kiến trúc, onboarding, hiệu năng đến các hệ thống dùng chung giúp tăng tốc độ và sự nhất quán khi delivery sản phẩm.",
-      "metaLabel": "Công việc tiêu biểu",
-      "cardDescription": "Tóm tắt ngắn gọn về công việc hệ thống, chất lượng delivery và năng lực dẫn dắt thực tế.",
+      "title": "Xây dựng nền tảng kỹ thuật giúp đội ngũ phát triển nhanh hơn và ổn định hơn.",
+      "description": "Kinh nghiệm trải dài từ phát triển tính năng, thiết kế hệ thống frontend, xây dựng nền tảng dùng chung, testing đến cải tiến quy trình phát triển phần mềm.",
+      "metaLabel": "Kinh nghiệm tiêu biểu",
+      "cardDescription": "Các dự án đại diện cho kinh nghiệm về frontend architecture, reusable systems, delivery quality và technical leadership.",
       "workstreamLabel": "Luồng công việc",
       "focusAreasLabel": "mảng trọng tâm"
     },
     "goals": {
       "id": "goals",
       "eyebrow": "Mục tiêu",
-      "title": "Định hướng phát triển, giữ ở mức rõ ràng.",
-      "description": "Giai đoạn tiếp theo tập trung vào product ownership, nền tảng vững hơn và giao tiếp sắc nét hơn ở chiều sâu kỹ thuật.",
-      "closingNote": "Luôn tối ưu cho sự rõ ràng, khả năng bảo trì và chất lượng frontend đủ tin cậy trong môi trường sản phẩm thực tế."
+      "title": "Tiếp tục phát triển theo hướng Product-Level Engineering.",
+      "description": "Mục tiêu hiện tại là mở rộng chiều sâu về frontend architecture, system design, nền tảng lý thuyết và khả năng dẫn dắt kỹ thuật trong môi trường sản phẩm.",
+      "closingNote": "Luôn hướng tới những giải pháp rõ ràng, thực tế và có giá trị lâu dài cho cả sản phẩm lẫn đội ngũ phát triển."
     },
     "contact": {
       "id": "contact",
       "eyebrow": "Liên hệ",
-      "title": "Cùng kết nối quanh các bài toán frontend ở mức sản phẩm.",
-      "description": "Sẵn sàng trao đổi về hệ thống React có thể mở rộng, kiến trúc frontend và chất lượng delivery cho các team sản phẩm thực tế.",
+      "title": "Hãy kết nối nếu bạn quan tâm đến frontend, React hoặc kỹ thuật phần mềm.",
+      "description": "Luôn sẵn sàng trao đổi về React, frontend architecture, testing, developer productivity và các bài toán kỹ thuật thú vị.",
       "primaryAction": {
         "label": "Gửi email",
         "href": "mailto:mthh.shun.1804@gmail.com"
@@ -142,7 +169,7 @@
         "href": "https://github.com/hieu-mth"
       },
       "tertiaryAction": {
-        "label": "Mã nguồn dự án",
+        "label": "Mã nguồn portfolio",
         "href": "https://github.com/hieu-mth/hieu-mth"
       }
     },

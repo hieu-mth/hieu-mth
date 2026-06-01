@@ -33,6 +33,11 @@ export type Goals = {
   focus: string[];
 };
 
+export type HeroSignalItem = {
+  label: string;
+  value: string;
+};
+
 export type HeroContent = {
   id: string;
   headingPrefix: string;
@@ -40,7 +45,7 @@ export type HeroContent = {
   secondaryAction: CallToAction;
   signalEyebrow: string;
   signalTitle: string;
-  signalLabels: string[];
+  signalItems: HeroSignalItem[];
   summaryItems: string[];
   supportingText: string;
 };
