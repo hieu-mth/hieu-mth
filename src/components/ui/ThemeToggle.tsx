@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 
 import { Button } from '@/components/ui/Button';
+import type { ThemeToggleContent } from '@/features/profile/types';
 
 type Theme = 'light' | 'dark';
 
@@ -23,7 +24,11 @@ function applyTheme(theme: Theme) {
   document.documentElement.classList.toggle('dark', theme === 'dark');
 }
 
-export function ThemeToggle() {
+type ThemeToggleProps = {
+  copy: ThemeToggleContent;
+};
+
+export function ThemeToggle({ copy }: ThemeToggleProps) {
   const [theme, setTheme] = useState<Theme>('dark');
   const [mounted, setMounted] = useState(false);
 
@@ -71,8 +76,10 @@ export function ThemeToggle() {
       className="group rounded-[1.5rem] border border-border/28 bg-background/20 p-0 text-foreground/78 shadow-[0_12px_22px_-22px_hsl(var(--foreground)_/_0.05)] hover:bg-background/34"
       aria-label={
         mounted
-          ? `Switch to ${theme === 'dark' ? 'light' : 'dark'} theme`
-          : 'Toggle theme'
+          ? theme === 'dark'
+            ? copy.switchToLightLabel
+            : copy.switchToDarkLabel
+          : copy.toggleLabel
       }
       aria-pressed={mounted}
     >
@@ -134,7 +141,11 @@ export function ThemeToggle() {
           </svg>
         </motion.span>
         <span className="sr-only">
-          {mounted ? (theme === 'dark' ? 'Dark mode' : 'Light mode') : 'Theme'}
+          {mounted
+            ? theme === 'dark'
+              ? copy.darkModeLabel
+              : copy.lightModeLabel
+            : copy.toggleLabel}
         </span>
       </span>
     </Button>
