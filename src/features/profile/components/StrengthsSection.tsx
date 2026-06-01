@@ -7,9 +7,14 @@ import {
   StaggerListItem,
 } from '@/components/ui';
 import { getProfileData } from '@/features/profile/services';
+import type { ProfileLocale } from '@/features/profile/types';
 
-export function StrengthsSection() {
-  const { strengths, pageContent } = getProfileData();
+type StrengthsSectionProps = {
+  locale: ProfileLocale;
+};
+
+export function StrengthsSection({ locale }: StrengthsSectionProps) {
+  const { strengths, pageContent } = getProfileData(locale);
 
   return (
     <section
@@ -53,7 +58,8 @@ export function StrengthsSection() {
                 <div className="space-y-4">
                   <div className="h-px w-12 bg-gradient-to-r from-accent/32 to-transparent" />
                   <h3 className="text-xl font-semibold tracking-tight text-foreground">
-                    Capability {String(index + 1).padStart(2, '0')}
+                    {pageContent.strengths.itemTitlePrefix}{' '}
+                    {String(index + 1).padStart(2, '0')}
                   </h3>
                   <p className="max-w-[30ch] text-base leading-8 text-muted-foreground">
                     {strength}

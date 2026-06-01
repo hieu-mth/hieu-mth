@@ -9,12 +9,20 @@ import {
   StaggerListItem,
 } from '@/components/ui';
 import { getProfileData } from '@/features/profile/services';
+import type { ProfileLocale } from '@/features/profile/types';
 
-export function ThinkingSection() {
-  const { thinking, pageContent } = getProfileData();
+type ThinkingSectionProps = {
+  locale: ProfileLocale;
+};
+
+export function ThinkingSection({ locale }: ThinkingSectionProps) {
+  const { thinking, pageContent } = getProfileData(locale);
 
   return (
-    <section className="scroll-mt-32 border-t border-border/65 py-22 sm:py-24">
+    <section
+      id={pageContent.thinking.id}
+      className="scroll-mt-32 border-t border-border/65 py-22 sm:py-24"
+    >
       <Reveal className="grid gap-10 lg:grid-cols-[19rem_minmax(0,1fr)] lg:items-start">
         <div className="space-y-4">
           <Badge

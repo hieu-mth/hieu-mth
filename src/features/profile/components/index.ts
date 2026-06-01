@@ -3,6 +3,7 @@ export { ExperienceSection } from '@/features/profile/components/ExperienceSecti
 export { GoalsSection } from '@/features/profile/components/GoalsSection';
 export { HeroSection } from '@/features/profile/components/HeroSection';
 export { ProfileNavLinks } from '@/features/profile/components/ProfileNavLinks';
+export { ProfilePage } from '@/features/profile/components/ProfilePage';
 export { ProfileNavbar } from '@/features/profile/components/ProfileNavbar';
 export { StrengthsSection } from '@/features/profile/components/StrengthsSection';
 export { ThinkingSection } from '@/features/profile/components/ThinkingSection';

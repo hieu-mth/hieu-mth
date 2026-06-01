@@ -3,8 +3,15 @@ export {
   ExperienceSection,
   GoalsSection,
   HeroSection,
+  ProfilePage,
   ProfileNavbar,
   StrengthsSection,
   ThinkingSection,
 } from '@/features/profile/components';
-export { getProfileData } from '@/features/profile/services';
+export {
+  getProfileData,
+  getProfileMetadata,
+  getProfileRoute,
+  isProfileLocale,
+  resolveProfileLocale,
+} from '@/features/profile/services';

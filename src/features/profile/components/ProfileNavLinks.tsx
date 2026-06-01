@@ -3,18 +3,14 @@
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 
+import type { NavigationItem } from '@/features/profile/types';
 import { cn } from '@/lib/utils';
-
-type NavigationItem = {
-  label: string;
-  href: `#${string}`;
-};
 
 type ProfileNavLinksProps = {
   items: NavigationItem[];
   className?: string;
   itemClassName?: string;
-  ariaLabel?: string;
+  ariaLabel: string;
   activeClassName?: string;
 };
 
@@ -22,7 +18,7 @@ export function ProfileNavLinks({
   items,
   className,
   itemClassName,
-  ariaLabel = 'Section navigation',
+  ariaLabel,
   activeClassName,
 }: ProfileNavLinksProps) {
   const [activeHref, setActiveHref] = useState<NavigationItem['href'] | null>(

@@ -10,10 +10,15 @@ import {
   StaggerListItem,
 } from '@/components/ui';
 import { getProfileData } from '@/features/profile/services';
+import type { ProfileLocale } from '@/features/profile/types';
 
-export function HeroSection() {
+type HeroSectionProps = {
+  locale: ProfileLocale;
+};
+
+export function HeroSection({ locale }: HeroSectionProps) {
   const { basicProfile, strengths, experiences, thinking, pageContent } =
-    getProfileData();
+    getProfileData(locale);
   const firstName = basicProfile.name.split(' ').at(-1) ?? basicProfile.name;
 
   const signal = [
@@ -33,7 +38,7 @@ export function HeroSection() {
 
   return (
     <section
-      id="hero"
+      id={pageContent.hero.id}
       className="relative scroll-mt-32 py-20 sm:py-24 lg:py-28"
     >
       <div className="grid items-start gap-12 lg:grid-cols-[minmax(0,1fr)_22rem] lg:gap-14 xl:grid-cols-[minmax(0,1fr)_24rem]">
@@ -48,7 +53,7 @@ export function HeroSection() {
               </Badge>
               <div className="space-y-5">
                 <h1 className="max-w-4xl text-5xl font-bold tracking-[-0.04em] text-foreground sm:text-6xl lg:text-7xl xl:text-[5rem]">
-                  Hi, I&apos;m{' '}
+                  {pageContent.hero.headingPrefix}{' '}
                   <span className="text-foreground/72 underline decoration-accent/14 decoration-[0.34rem] underline-offset-[0.16em]">
                     {firstName}
                   </span>
@@ -60,7 +65,9 @@ export function HeroSection() {
             </div>
             <div className="flex flex-wrap gap-3 pt-1">
               <Button asChild size="lg" className="min-w-[10.5rem] px-8">
-                <a href={pageContent.hero.primaryAction.href}>View Projects</a>
+                <a href={pageContent.hero.primaryAction.href}>
+                  {pageContent.hero.primaryAction.label}
+                </a>
               </Button>
               <Button
                 asChild
@@ -69,22 +76,21 @@ export function HeroSection() {
                 className="min-w-[10.5rem] px-8"
               >
                 <a href={pageContent.hero.secondaryAction.href}>
-                  Current Goals
+                  {pageContent.hero.secondaryAction.label}
                 </a>
               </Button>
             </div>
             <div className="flex flex-wrap items-center gap-x-4 gap-y-2 rounded-full border border-border/50 bg-background/52 px-4 py-2 text-sm text-muted-foreground shadow-[0_18px_34px_-30px_hsl(var(--foreground)_/_0.1)] backdrop-blur-sm">
               <span className="font-medium text-foreground/82">
-                Focused on product-grade frontend systems
+                {pageContent.hero.summaryItems[0]}
               </span>
               <span className="hidden h-1 w-1 rounded-full bg-border sm:inline-flex" />
-              <span>Readable interfaces</span>
+              <span>{pageContent.hero.summaryItems[1]}</span>
               <span className="hidden h-1 w-1 rounded-full bg-border sm:inline-flex" />
-              <span>Scalable delivery</span>
+              <span>{pageContent.hero.summaryItems[2]}</span>
             </div>
             <p className="max-w-2xl text-sm leading-7 text-muted-foreground sm:text-base">
-              {pageContent.hero.signalTitle}. Shipping readable systems,
-              scalable interfaces, and product-minded frontend foundations.
+              {pageContent.hero.signalTitle}. {pageContent.hero.supportingText}
             </p>
           </header>
         </Reveal>

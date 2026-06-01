@@ -1,1 +1,7 @@
-export { getProfileData } from '@/features/profile/services/profile.service';
+export {
+  getProfileData,
+  getProfileMetadata,
+  getProfileRoute,
+  isProfileLocale,
+  resolveProfileLocale,
+} from '@/features/profile/services/profile.service';
