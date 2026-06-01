@@ -6,7 +6,7 @@
   },
   "strengths": [
     "Thiết kế và phát triển kiến trúc frontend cho các hệ thống enterprise quy mô lớn",
-    "Xây dựng reusable component systems, field systems và common UI frameworks",
+    "Xây dựng component systems, field systems và các UI dùng chung có khả năng tái sử dụng",
     "Tối ưu hiệu năng React cho các màn hình và luồng nghiệp vụ phức tạp",
     "Phối hợp hiệu quả giữa frontend, backend và database trong các hệ thống enterprise",
     "Code review, onboarding và hỗ trợ phát triển kỹ năng cho thành viên trong nhóm",
@@ -73,7 +73,7 @@
   "pageContent": {
     "navbar": {
       "heroHref": "#hero",
-      "brandEyebrow": "Senior Frontend Engineer",
+      "brandEyebrow": "React • Architecture • Leadership",
       "navigationAriaLabel": "Điều hướng các phần nội dung",
       "items": [
         {
@@ -101,12 +101,12 @@
         "label": "Mục tiêu hiện tại",
         "href": "#goals"
       },
-      "signalEyebrow": "Senior Frontend Engineer",
-      "signalTitle": "React, Frontend Architecture & Technical Leadership",
+      "signalEyebrow": "Enterprise Frontend",
+      "signalTitle": "React, Enterprise Systems & Technical Leadership",
       "signalItems": [
         {
           "label": "Năm",
-          "value": "07"
+          "value": "07+"
         },
         {
           "label": "Hệ thống",

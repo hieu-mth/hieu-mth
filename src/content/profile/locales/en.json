@@ -73,7 +73,7 @@
   "pageContent": {
     "navbar": {
       "heroHref": "#hero",
-      "brandEyebrow": "Senior Frontend Engineer",
+      "brandEyebrow": "React • Architecture • Leadership",
       "navigationAriaLabel": "Navigate page sections",
       "items": [
         {
@@ -101,12 +101,12 @@
         "label": "Current goals",
         "href": "#goals"
       },
-      "signalEyebrow": "Senior Frontend Engineer",
-      "signalTitle": "React, Frontend Architecture & Technical Leadership",
+      "signalEyebrow": "Enterprise Frontend",
+      "signalTitle": "React, Enterprise Systems & Technical Leadership",
       "signalItems": [
         {
           "label": "Years",
-          "value": "07"
+          "value": "07+"
         },
         {
           "label": "Systems",
@@ -120,7 +120,7 @@
       "summaryItems": [
         "7 years of software development experience",
         "React and large-scale enterprise systems",
-        "Architecture, mentoring, and team effectiveness"
+        "Architecture, mentoring, and AI-assisted workflow"
       ],
       "supportingText": "Focused on building frontend systems that scale, stay maintainable, and help teams work more effectively over the long term."
     },
@@ -158,7 +158,7 @@
     "contact": {
       "id": "contact",
       "eyebrow": "Contact",
-      "title": "Happy to connect and talk about frontend engineering.",
+      "title": "Let’s connect if you care about frontend, React, or software engineering.",
       "description": "Always open to conversations around React, frontend architecture, testing, developer productivity, and interesting technical challenges.",
       "primaryAction": {
         "label": "Send email",
