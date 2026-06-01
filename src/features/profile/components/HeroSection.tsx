@@ -22,6 +22,7 @@ export function HeroSection({ locale }: HeroSectionProps) {
   const headingParts = pageContent.hero.headingPrefix.trim().split(/\s+/);
   const headingLead = headingParts.slice(0, -1).join(' ');
   const headingTail = headingParts.at(-1) ?? pageContent.hero.headingPrefix;
+  const isEnglish = locale === 'en';
 
   return (
     <section
@@ -41,15 +42,24 @@ export function HeroSection({ locale }: HeroSectionProps) {
                 {basicProfile.role}
               </Badge>
               <div className="space-y-5">
-                <h1 className="max-w-[12ch] text-5xl font-bold leading-[0.94] tracking-[-0.05em] text-foreground sm:max-w-[13ch] sm:text-6xl lg:max-w-[12ch] lg:text-[4.75rem] xl:text-[5rem]">
-                  <span className="block">{headingLead}</span>
-                  <span className="mt-2 block">
-                    <span>{headingTail} </span>
+                {isEnglish ? (
+                  <h1 className="max-w-[9ch] text-5xl font-bold leading-[0.94] tracking-[-0.05em] text-foreground sm:max-w-[10ch] sm:text-6xl md:max-w-[12ch] lg:max-w-[14ch] lg:text-[4.75rem] xl:max-w-none xl:text-[5rem]">
+                    <span>{pageContent.hero.headingPrefix} </span>
                     <span className="relative inline-block text-foreground/78 underline decoration-accent/18 decoration-[0.34rem] underline-offset-[0.16em]">
                       {firstName}
                     </span>
-                  </span>
-                </h1>
+                  </h1>
+                ) : (
+                  <h1 className="max-w-[12ch] text-5xl font-bold leading-[0.94] tracking-[-0.05em] text-foreground sm:max-w-[13ch] sm:text-6xl lg:max-w-[12ch] lg:text-[4.75rem] xl:text-[5rem]">
+                    <span className="block">{headingLead}</span>
+                    <span className="mt-2 block">
+                      <span>{headingTail} </span>
+                      <span className="relative inline-block text-foreground/78 underline decoration-accent/18 decoration-[0.34rem] underline-offset-[0.16em]">
+                        {firstName}
+                      </span>
+                    </span>
+                  </h1>
+                )}
                 <p className="max-w-[32rem] text-lg leading-8 text-muted-foreground sm:text-[1.2rem] sm:leading-9 lg:max-w-[34rem]">
                   {basicProfile.tagline}
                 </p>
