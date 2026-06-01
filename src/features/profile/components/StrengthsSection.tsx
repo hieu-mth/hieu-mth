@@ -40,10 +40,10 @@ export function StrengthsSection({ locale }: StrengthsSectionProps) {
         </div>
       </Reveal>
       <StaggerList className="mt-10 grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-5 xl:grid-cols-3">
-        {strengths.map((strength, index) => (
+        {strengths.map((strength) => (
           <StaggerListItem key={strength} className="list-none">
             <Card className="group h-full border-border/60 bg-card/62 shadow-[0_22px_46px_-38px_hsl(var(--foreground)_/_0.1)] hover:-translate-y-1 hover:border-accent/18 hover:shadow-[0_28px_60px_-42px_hsl(var(--foreground)_/_0.12)]">
-              <CardContent className="flex h-full flex-col gap-8 px-6 py-6 sm:gap-10 sm:px-7 sm:py-7">
+              <CardContent className="flex h-full flex-col gap-8 px-6 py-6 sm:px-7 sm:py-7">
                 <div className="flex items-center justify-between">
                   <Badge
                     variant="outline"
@@ -51,17 +51,16 @@ export function StrengthsSection({ locale }: StrengthsSectionProps) {
                   >
                     {pageContent.strengths.cardEyebrow}
                   </Badge>
-                  <span className="text-sm font-medium text-muted-foreground transition-colors duration-200 group-hover:text-foreground/70">
-                    {String(index + 1).padStart(2, '0')}
-                  </span>
+                  <div
+                    aria-hidden="true"
+                    className="flex items-center gap-2 text-muted-foreground/55 transition-colors duration-200 group-hover:text-accent/75"
+                  >
+                    <span className="h-1.5 w-1.5 rounded-full bg-current" />
+                    <span className="h-px w-12 bg-gradient-to-r from-current to-transparent" />
+                  </div>
                 </div>
-                <div className="space-y-4">
-                  <div className="h-px w-12 bg-gradient-to-r from-accent/32 to-transparent" />
-                  <h3 className="text-xl font-semibold tracking-tight text-foreground">
-                    {pageContent.strengths.itemTitlePrefix}{' '}
-                    {String(index + 1).padStart(2, '0')}
-                  </h3>
-                  <p className="max-w-[30ch] text-base leading-8 text-muted-foreground">
+                <div className="space-y-5">
+                  <p className="max-w-[28ch] text-lg font-medium leading-8 text-foreground sm:text-[1.35rem] sm:leading-9">
                     {strength}
                   </p>
                 </div>
