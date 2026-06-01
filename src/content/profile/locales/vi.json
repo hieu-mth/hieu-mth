@@ -1,0 +1,181 @@
+{
+  "basicProfile": {
+    "name": "Mai Tran Huu Hieu",
+    "role": "Senior Frontend Engineer",
+    "tagline": "Tập trung vào hệ thống React có khả năng mở rộng, kiến trúc enterprise và năng suất phát triển."
+  },
+  "strengths": [
+    "Thiết kế kiến trúc frontend có thể mở rộng cho hệ thống enterprise",
+    "Xây dựng hệ thống component và field có thể tái sử dụng",
+    "Tối ưu rendering và hiệu năng ứng dụng",
+    "Dẫn dắt code review và onboarding cho developer",
+    "Ứng dụng AI để cải thiện quy trình phát triển"
+  ],
+  "thinking": [
+    {
+      "title": "Tư duy hệ thống",
+      "description": "Ưu tiên khả năng mở rộng, dễ bảo trì và tái sử dụng"
+    },
+    {
+      "title": "Giải quyết vấn đề",
+      "description": "Xác định gốc rễ và đánh giá trade-off rõ ràng"
+    },
+    {
+      "title": "Chất lượng mã nguồn",
+      "description": "Ưu tiên tính dễ đọc và dễ bảo trì"
+    },
+    {
+      "title": "Năng suất",
+      "description": "Tận dụng AI để cải thiện workflow làm việc"
+    }
+  ],
+  "experiences": [
+    {
+      "title": "Nền tảng React cho enterprise",
+      "role": "Tech SubLeader",
+      "highlights": [
+        "Thiết kế hệ thống tái sử dụng",
+        "Cải thiện quy trình testing",
+        "Dẫn dắt onboarding"
+      ]
+    },
+    {
+      "title": "Hệ thống dashboard",
+      "role": "Key Member",
+      "highlights": [
+        "Xây dựng từ đầu",
+        "Thiết kế kiến trúc",
+        "Tối ưu hiệu năng"
+      ]
+    }
+  ],
+  "goals": {
+    "focus": [
+      "Chuyển dịch sang vai trò product-level engineering",
+      "Củng cố nền tảng khoa học máy tính",
+      "Nâng cao giao tiếp kỹ thuật"
+    ]
+  },
+  "pageContent": {
+    "navbar": {
+      "heroHref": "#hero",
+      "brandEyebrow": "Frontend craft",
+      "navigationAriaLabel": "Điều hướng các phần nội dung",
+      "items": [
+        {
+          "label": "Điểm mạnh",
+          "href": "#strengths"
+        },
+        {
+          "label": "Kinh nghiệm",
+          "href": "#experience"
+        },
+        {
+          "label": "Liên hệ",
+          "href": "#contact"
+        }
+      ]
+    },
+    "hero": {
+      "id": "hero",
+      "headingPrefix": "Xin chào, mình là",
+      "primaryAction": {
+        "label": "Xem kinh nghiệm",
+        "href": "#experience"
+      },
+      "secondaryAction": {
+        "label": "Xem mục tiêu hiện tại",
+        "href": "#goals"
+      },
+      "signalEyebrow": "Tín hiệu hồ sơ",
+      "signalTitle": "Hệ thống frontend có thể mở rộng",
+      "signalLabels": ["Điểm mạnh", "Nguyên tắc", "Dự án"],
+      "summaryItems": [
+        "Tập trung vào frontend ở mức sản phẩm",
+        "Giao diện dễ đọc",
+        "Khả năng mở rộng khi delivery"
+      ],
+      "supportingText": "Xây dựng hệ thống dễ đọc, giao diện có thể mở rộng và nền tảng frontend theo tư duy sản phẩm."
+    },
+    "strengths": {
+      "id": "strengths",
+      "eyebrow": "Điểm mạnh",
+      "title": "Triển khai hệ thống với độ hoàn thiện ở mức sản phẩm.",
+      "description": "Trọng tâm là kiến trúc frontend có thể lặp lại, hệ thống dễ bảo trì và chất lượng thực thi vẫn rõ ràng khi quy mô tăng lên.",
+      "cardEyebrow": "Năng lực",
+      "itemTitlePrefix": "Năng lực"
+    },
+    "thinking": {
+      "id": "thinking",
+      "eyebrow": "Tư duy",
+      "title": "Nguyên tắc cho hệ thống, trade-off và thực thi.",
+      "description": "Cách làm việc luôn thực dụng: xác định đúng gốc rễ, giữ hướng đi rõ ràng và tối ưu cho quy mô mà không tạo thêm ma sát."
+    },
+    "experience": {
+      "id": "experience",
+      "eyebrow": "Kinh nghiệm",
+      "title": "Xây nền tảng để team có thể tiếp tục phát triển.",
+      "description": "Kinh nghiệm trải dài từ kiến trúc, onboarding, hiệu năng đến các hệ thống dùng chung giúp tăng tốc độ và sự nhất quán khi delivery sản phẩm.",
+      "metaLabel": "Công việc tiêu biểu",
+      "cardDescription": "Tóm tắt ngắn gọn về công việc hệ thống, chất lượng delivery và năng lực dẫn dắt thực tế.",
+      "workstreamLabel": "Luồng công việc",
+      "focusAreasLabel": "mảng trọng tâm"
+    },
+    "goals": {
+      "id": "goals",
+      "eyebrow": "Mục tiêu",
+      "title": "Định hướng phát triển, giữ ở mức rõ ràng.",
+      "description": "Giai đoạn tiếp theo tập trung vào product ownership, nền tảng vững hơn và giao tiếp sắc nét hơn ở chiều sâu kỹ thuật.",
+      "closingNote": "Luôn tối ưu cho sự rõ ràng, khả năng bảo trì và chất lượng frontend đủ tin cậy trong môi trường sản phẩm thực tế."
+    },
+    "contact": {
+      "id": "contact",
+      "eyebrow": "Liên hệ",
+      "title": "Cùng kết nối quanh các bài toán frontend ở mức sản phẩm.",
+      "description": "Sẵn sàng trao đổi về hệ thống React có thể mở rộng, kiến trúc frontend và chất lượng delivery cho các team sản phẩm thực tế.",
+      "primaryAction": {
+        "label": "Gửi email",
+        "href": "mailto:mthh.shun.1804@gmail.com"
+      },
+      "secondaryAction": {
+        "label": "GitHub cá nhân",
+        "href": "https://github.com/hieu-mth"
+      },
+      "tertiaryAction": {
+        "label": "Mã nguồn dự án",
+        "href": "https://github.com/hieu-mth/hieu-mth"
+      }
+    },
+    "ui": {
+      "backToTop": {
+        "label": "Lên đầu trang",
+        "ariaLabel": "Lên đầu trang"
+      },
+      "redirect": {
+        "label": "Đang chuyển hướng..."
+      },
+      "localeSwitcher": {
+        "ariaLabel": "Bộ chọn ngôn ngữ",
+        "options": [
+          {
+            "value": "en",
+            "label": "English",
+            "shortLabel": "EN"
+          },
+          {
+            "value": "vi",
+            "label": "Tiếng Việt",
+            "shortLabel": "VI"
+          }
+        ]
+      },
+      "themeToggle": {
+        "toggleLabel": "Chuyển giao diện",
+        "switchToLightLabel": "Chuyển sang giao diện sáng",
+        "switchToDarkLabel": "Chuyển sang giao diện tối",
+        "lightModeLabel": "Chế độ sáng",
+        "darkModeLabel": "Chế độ tối"
+      }
+    }
+  }
+}

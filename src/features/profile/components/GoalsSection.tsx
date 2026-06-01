@@ -7,9 +7,14 @@ import {
   StaggerListItem,
 } from '@/components/ui';
 import { getProfileData } from '@/features/profile/services';
+import type { ProfileLocale } from '@/features/profile/types';
 
-export function GoalsSection() {
-  const { goals, pageContent } = getProfileData();
+type GoalsSectionProps = {
+  locale: ProfileLocale;
+};
+
+export function GoalsSection({ locale }: GoalsSectionProps) {
+  const { goals, pageContent } = getProfileData(locale);
 
   return (
     <section
@@ -54,8 +59,7 @@ export function GoalsSection() {
         <Reveal delay={0.08} className="mx-auto max-w-2xl">
           <div className="rounded-full border border-border/50 bg-background/52 px-5 py-3 shadow-[0_18px_34px_-30px_hsl(var(--foreground)_/_0.08)]">
             <p className="text-sm leading-7 text-muted-foreground sm:text-base">
-              Always optimizing for clarity, maintainability, and the kind of
-              frontend quality that feels dependable in real product teams.
+              {pageContent.goals.closingNote}
             </p>
           </div>
         </Reveal>

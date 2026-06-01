@@ -1,5 +1,6 @@
 import { Badge, Button, Card, CardContent, Reveal } from '@/components/ui';
 import { getProfileData } from '@/features/profile/services';
+import type { ProfileLocale } from '@/features/profile/types';
 
 type ContactActionItem = {
   label: string;
@@ -7,8 +8,12 @@ type ContactActionItem = {
   variant: 'default' | 'outline';
 };
 
-export function ContactSection() {
-  const { basicProfile, pageContent } = getProfileData();
+type ContactSectionProps = {
+  locale: ProfileLocale;
+};
+
+export function ContactSection({ locale }: ContactSectionProps) {
+  const { basicProfile, pageContent } = getProfileData(locale);
   const contactActions = [
     {
       ...pageContent.contact.primaryAction,

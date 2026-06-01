@@ -10,9 +10,14 @@ import {
   StaggerListItem,
 } from '@/components/ui';
 import { getProfileData } from '@/features/profile/services';
+import type { ProfileLocale } from '@/features/profile/types';
 
-export function ExperienceSection() {
-  const { experiences, pageContent } = getProfileData();
+type ExperienceSectionProps = {
+  locale: ProfileLocale;
+};
+
+export function ExperienceSection({ locale }: ExperienceSectionProps) {
+  const { experiences, pageContent } = getProfileData(locale);
 
   return (
     <section
@@ -71,9 +76,13 @@ export function ExperienceSection() {
                   <CardContent className="space-y-5 px-6 py-5 sm:space-y-6 sm:px-7 sm:py-6">
                     <div className="flex flex-col gap-2 rounded-[1.2rem] border border-border/60 bg-background/58 px-4 py-3 text-sm text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
                       <span className="font-medium text-foreground/80">
-                        Workstream {String(index + 1).padStart(2, '0')}
+                        {pageContent.experience.workstreamLabel}{' '}
+                        {String(index + 1).padStart(2, '0')}
                       </span>
-                      <span>{experience.highlights.length} focus areas</span>
+                      <span>
+                        {experience.highlights.length}{' '}
+                        {pageContent.experience.focusAreasLabel}
+                      </span>
                     </div>
                     <ul className="grid gap-3 md:grid-cols-3">
                       {experience.highlights.map((highlight) => (
