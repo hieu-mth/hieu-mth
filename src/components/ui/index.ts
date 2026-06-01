@@ -13,4 +13,5 @@ export {
   StaggerList,
   StaggerListItem,
 } from '@/components/ui/MotionPrimitives';
+export { LocaleSwitcher } from '@/components/ui/LocaleSwitcher';
 export { ThemeToggle } from '@/components/ui/ThemeToggle';
